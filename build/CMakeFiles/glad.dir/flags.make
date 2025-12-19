@@ -6,5 +6,5 @@ C_DEFINES =
 
 C_INCLUDES = -I/home/guilt/Project/OPENGL/CreateWindow/include
 
-C_FLAGS = 
+C_FLAGS = -g
 

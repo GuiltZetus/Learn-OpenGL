@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/guilt/Project/OPENGL/CreateWindow/build",
+  "command": "/usr/bin/gcc  -I/home/guilt/Project/OPENGL/CreateWindow/include -g -o CMakeFiles/glad.dir/src/glad.c.o -c /home/guilt/Project/OPENGL/CreateWindow/src/glad.c",
+  "file": "/home/guilt/Project/OPENGL/CreateWindow/src/glad.c",
+  "output": "CMakeFiles/glad.dir/src/glad.c.o"
+},
+{
+  "directory": "/home/guilt/Project/OPENGL/CreateWindow/build",
+  "command": "/usr/bin/g++  -I/home/guilt/Project/OPENGL/CreateWindow/include -g -std=gnu++17 -o CMakeFiles/CreateWindow.dir/src/main.cpp.o -c /home/guilt/Project/OPENGL/CreateWindow/src/main.cpp",
+  "file": "/home/guilt/Project/OPENGL/CreateWindow/src/main.cpp",
+  "output": "CMakeFiles/CreateWindow.dir/src/main.cpp.o"
+}
+]
