@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.10"
@@ -20,7 +20,7 @@
 					]
 				}
 			],
-			"name" : "",
+			"name" : "Debug",
 			"projects" : 
 			[
 				{
@@ -41,14 +41,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "CreateWindow::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-CreateWindow-4e73954426f7cf4560b1.json",
+					"jsonFile" : "target-CreateWindow-Debug-99d61f5756ef3f123054.json",
 					"name" : "CreateWindow",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "glad::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-glad-0a2e64a856346d81deca.json",
+					"jsonFile" : "target-glad-Debug-67441e896752730a1b84.json",
 					"name" : "glad",
 					"projectIndex" : 0
 				}
