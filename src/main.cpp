@@ -34,6 +34,13 @@ const char *fragmentShaderSource = "#version 330 core\n"
                                    "   FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
                                    "}\n\0";
 
+const char *fragmentShaderSourceYellow = "#version 330 core\n"
+                                         "out vec4 FragColor;\n"
+                                         "void main()\n"
+                                         "{\n"
+                                         "   FragColor = vec4(1.0f, 1.0f, 0.0f, 1.0f);\n"
+                                         "}\n\0";
+
 int main()
 {
     // init the glfw window
@@ -83,6 +90,11 @@ int main()
     glShaderSource(fragmentShader, 1, &fragmentShaderSource, NULL);
     glCompileShader(fragmentShader);
 
+    // yellow fragment shader
+    GLuint fragmentShaderYellow = glCreateShader(GL_FRAGMENT_SHADER);
+    glShaderSource(fragmentShaderYellow, 1, &fragmentShaderSourceYellow, NULL);
+    glCompileShader(fragmentShaderYellow);
+
     // check for shader compile error
     glGetShaderiv(fragmentShader, GL_COMPILE_STATUS, &success);
     if (!success)
@@ -99,9 +111,17 @@ int main()
     glAttachShader(shaderProgram, fragmentShader);
     glLinkProgram(shaderProgram);
 
+    // yellow shader program
+    GLuint shaderProgramYellow;
+    shaderProgramYellow = glCreateProgram();
+    glAttachShader(shaderProgramYellow, vertexShader);
+    glAttachShader(shaderProgramYellow, fragmentShaderYellow);
+    glLinkProgram(shaderProgramYellow);
+
     // delete the shader because we have linked
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
+    glDeleteShader(fragmentShaderYellow);
 
     // check for shader program compilation error
     glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
@@ -111,25 +131,44 @@ int main()
         std::cout << "FUCKING SHADER PROGRAM FAIL TO COMPILE" << std::endl;
     }
 
+    glGetProgramiv(shaderProgramYellow, GL_LINK_STATUS, &success);
+    if (!success)
+    {
+        glGetProgramInfoLog(shaderProgramYellow, 512, NULL, infoLog);
+        std::cout << "FUCKING SHADER PROGRAM YELLOW FAIL TO COMPILE" << std::endl;
+    }
+
     // SETUP VERTICES AND BUFFER
     //  vertex data
     float vertices[] = {
-        -0.5f, -0.5f, 0.0f,
-        0.5f, -0.5f, 0.0f,
-        0.0f, 0.5f, 0.0f};
+        -0.5f, 0.5f, 0.0f,
+        0.0f, 0.0f, 0.0f,
+        -0.5f, 0.0f, 0.0f};
+
+    float vertices2[] = {
+        0.0f, 0.0f, 0.0f,
+        0.5f, 0.5f, 0.0f,
+        0.5f, 0.0f, 0.0f};
 
     // 0. vertex buffer object and vertex array object creation
-    GLuint VBO, VAO;
-    glGenBuffers(1, &VBO);
-    glGenVertexArrays(1, &VAO);
+    GLuint VBOs[2], VAOs[2];
+    glGenBuffers(2, VBOs);
+    glGenVertexArrays(2, VAOs);
     // 1. binding the VAO
-    glBindVertexArray(VAO);
+    glBindVertexArray(VAOs[0]);
 
     // 2. copy of vertices array in a buffer
-    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    glBindBuffer(GL_ARRAY_BUFFER, VBOs[0]);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 
     // 3. LINKING VERTEX ATTRIBUTE
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GLfloat), (void *)0);
+    glEnableVertexAttribArray(0);
+
+    // second vertex
+    glBindVertexArray(VAOs[1]);
+    glBindBuffer(GL_ARRAY_BUFFER, VBOs[1]);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices2), vertices2, GL_STATIC_DRAW);
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GLfloat), (void *)0);
     glEnableVertexAttribArray(0);
 
@@ -145,7 +184,12 @@ int main()
 
         // 4. use the shader program and draw the triangle
         glUseProgram(shaderProgram);
-        glBindVertexArray(VAO);
+        glBindVertexArray(VAOs[0]);
+        glDrawArrays(GL_TRIANGLES, 0, 3);
+
+        // use shader program yellow
+        glUseProgram(shaderProgramYellow);
+        glBindVertexArray(VAOs[1]);
         glDrawArrays(GL_TRIANGLES, 0, 3);
         // glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
