@@ -88,7 +88,7 @@ clean: CMakeFiles/CreateWindow.dir/clean
 CMakeFiles/glad.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/guilt/Project/OPENGL/CreateWindow/build/CMakeFiles --progress-num=3,4 "Built target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/guilt/Project/OPENGL/CreateWindow/build/CMakeFiles --progress-num=4,5 "Built target glad"
 .PHONY : CMakeFiles/glad.dir/all
 
 # Build rule for subdir invocation for target.
@@ -105,7 +105,7 @@ glad: CMakeFiles/glad.dir/rule
 # codegen rule for target.
 CMakeFiles/glad.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/guilt/Project/OPENGL/CreateWindow/build/CMakeFiles --progress-num=3,4 "Finished codegen for target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/guilt/Project/OPENGL/CreateWindow/build/CMakeFiles --progress-num=4,5 "Finished codegen for target glad"
 .PHONY : CMakeFiles/glad.dir/codegen
 
 # clean rule for target.
@@ -120,12 +120,12 @@ CMakeFiles/glad.dir/clean:
 CMakeFiles/CreateWindow.dir/all: CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/guilt/Project/OPENGL/CreateWindow/build/CMakeFiles --progress-num=1,2 "Built target CreateWindow"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/guilt/Project/OPENGL/CreateWindow/build/CMakeFiles --progress-num=1,2,3 "Built target CreateWindow"
 .PHONY : CMakeFiles/CreateWindow.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CreateWindow.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guilt/Project/OPENGL/CreateWindow/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guilt/Project/OPENGL/CreateWindow/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CreateWindow.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/guilt/Project/OPENGL/CreateWindow/build/CMakeFiles 0
 .PHONY : CMakeFiles/CreateWindow.dir/rule
@@ -137,7 +137,7 @@ CreateWindow: CMakeFiles/CreateWindow.dir/rule
 # codegen rule for target.
 CMakeFiles/CreateWindow.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/guilt/Project/OPENGL/CreateWindow/build/CMakeFiles --progress-num=1,2 "Finished codegen for target CreateWindow"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/guilt/Project/OPENGL/CreateWindow/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target CreateWindow"
 .PHONY : CMakeFiles/CreateWindow.dir/codegen
 
 # clean rule for target.

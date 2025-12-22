@@ -10,5 +10,11 @@
   "command": "/usr/bin/g++  -I/home/guilt/Project/OPENGL/CreateWindow/include -g -std=gnu++17 -o CMakeFiles/CreateWindow.dir/src/main.cpp.o -c /home/guilt/Project/OPENGL/CreateWindow/src/main.cpp",
   "file": "/home/guilt/Project/OPENGL/CreateWindow/src/main.cpp",
   "output": "CMakeFiles/CreateWindow.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/guilt/Project/OPENGL/CreateWindow/build",
+  "command": "/usr/bin/g++  -I/home/guilt/Project/OPENGL/CreateWindow/include -g -std=gnu++17 -o CMakeFiles/CreateWindow.dir/src/shader.cpp.o -c /home/guilt/Project/OPENGL/CreateWindow/src/shader.cpp",
+  "file": "/home/guilt/Project/OPENGL/CreateWindow/src/shader.cpp",
+  "output": "CMakeFiles/CreateWindow.dir/src/shader.cpp.o"
 }
 ]
