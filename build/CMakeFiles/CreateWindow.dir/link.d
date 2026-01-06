@@ -3,7 +3,8 @@ CreateWindow: \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o \
   /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o \
   CMakeFiles/CreateWindow.dir/src/main.cpp.o \
-  CMakeFiles/CreateWindow.dir/src/shader.cpp.o \
+  CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o \
+  CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o \
   libglad.a \
   /usr/lib64/libglfw.so.3.4 \
   /usr/lib64/libGLX.so \
@@ -49,7 +50,9 @@ CreateWindow: \
 
 CMakeFiles/CreateWindow.dir/src/main.cpp.o:
 
-CMakeFiles/CreateWindow.dir/src/shader.cpp.o:
+CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o:
+
+CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o:
 
 libglad.a:
 

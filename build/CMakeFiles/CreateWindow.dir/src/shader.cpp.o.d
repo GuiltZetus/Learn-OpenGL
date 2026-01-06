@@ -1,7 +1,7 @@
 CMakeFiles/CreateWindow.dir/src/shader.cpp.o: \
  /home/guilt/Project/OPENGL/CreateWindow/src/shader.cpp \
  /usr/include/stdc-predef.h \
- /home/guilt/Project/OPENGL/CreateWindow/src/shader.h \
+ /home/guilt/Project/OPENGL/CreateWindow/src/shaderClass.h \
  /home/guilt/Project/OPENGL/CreateWindow/include/glad/glad.h \
  /home/guilt/Project/OPENGL/CreateWindow/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h \

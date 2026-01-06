@@ -1,9 +1,11 @@
 file(REMOVE_RECURSE
   "CMakeFiles/CreateWindow.dir/link.d"
+  "CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o"
+  "CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o.d"
+  "CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o"
+  "CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o.d"
   "CMakeFiles/CreateWindow.dir/src/main.cpp.o"
   "CMakeFiles/CreateWindow.dir/src/main.cpp.o.d"
-  "CMakeFiles/CreateWindow.dir/src/shader.cpp.o"
-  "CMakeFiles/CreateWindow.dir/src/shader.cpp.o.d"
   "CreateWindow"
   "CreateWindow.pdb"
 )

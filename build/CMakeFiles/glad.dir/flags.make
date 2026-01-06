@@ -4,7 +4,7 @@
 # compile C with /usr/bin/gcc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/guilt/Project/OPENGL/CreateWindow/include
+C_INCLUDES = -I/home/guilt/Project/OPENGL/CreateWindow/external/glad/include
 
 C_FLAGS = -g
 
