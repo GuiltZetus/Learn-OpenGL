@@ -22,5 +22,11 @@
   "command": "/usr/bin/g++  -I/home/guilt/Project/OPENGL/CreateWindow/include -I/home/guilt/Project/OPENGL/CreateWindow/external/stb -I/home/guilt/Project/OPENGL/CreateWindow/external/glad/include -g -std=gnu++17 -o CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o -c /home/guilt/Project/OPENGL/CreateWindow/src/engine/VBO.cpp",
   "file": "/home/guilt/Project/OPENGL/CreateWindow/src/engine/VBO.cpp",
   "output": "CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o"
+},
+{
+  "directory": "/home/guilt/Project/OPENGL/CreateWindow/build",
+  "command": "/usr/bin/g++  -I/home/guilt/Project/OPENGL/CreateWindow/include -I/home/guilt/Project/OPENGL/CreateWindow/external/stb -I/home/guilt/Project/OPENGL/CreateWindow/external/glad/include -g -std=gnu++17 -o CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.o -c /home/guilt/Project/OPENGL/CreateWindow/src/engine/VAO.cpp",
+  "file": "/home/guilt/Project/OPENGL/CreateWindow/src/engine/VAO.cpp",
+  "output": "CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.o"
 }
 ]

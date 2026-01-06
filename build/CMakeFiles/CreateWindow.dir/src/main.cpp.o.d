@@ -145,6 +145,7 @@ CMakeFiles/CreateWindow.dir/src/main.cpp.o: \
  /usr/include/c++/15/bits/fstream.tcc /usr/include/c++/15/sstream \
  /usr/include/c++/15/bits/sstream.tcc /usr/include/c++/15/iostream \
  /home/guilt/Project/OPENGL/CreateWindow/include/engine/VBO.h \
+ /home/guilt/Project/OPENGL/CreateWindow/include/engine/VAO.h \
  /usr/include/c++/15/filesystem /usr/include/c++/15/bits/fs_fwd.h \
  /usr/include/c++/15/cstdint /usr/include/c++/15/bits/chrono.h \
  /usr/include/c++/15/ratio /usr/include/c++/15/limits \

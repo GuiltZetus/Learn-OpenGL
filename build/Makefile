@@ -190,6 +190,30 @@ src/engine/Shader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.s
 .PHONY : src/engine/Shader.cpp.s
 
+src/engine/VAO.o: src/engine/VAO.cpp.o
+.PHONY : src/engine/VAO.o
+
+# target to build an object file
+src/engine/VAO.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.o
+.PHONY : src/engine/VAO.cpp.o
+
+src/engine/VAO.i: src/engine/VAO.cpp.i
+.PHONY : src/engine/VAO.i
+
+# target to preprocess a source file
+src/engine/VAO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.i
+.PHONY : src/engine/VAO.cpp.i
+
+src/engine/VAO.s: src/engine/VAO.cpp.s
+.PHONY : src/engine/VAO.s
+
+# target to generate assembly for a file
+src/engine/VAO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.s
+.PHONY : src/engine/VAO.cpp.s
+
 src/engine/VBO.o: src/engine/VBO.cpp.o
 .PHONY : src/engine/VBO.o
 
@@ -254,6 +278,9 @@ help:
 	@echo "... src/engine/Shader.o"
 	@echo "... src/engine/Shader.i"
 	@echo "... src/engine/Shader.s"
+	@echo "... src/engine/VAO.o"
+	@echo "... src/engine/VAO.i"
+	@echo "... src/engine/VAO.s"
 	@echo "... src/engine/VBO.o"
 	@echo "... src/engine/VBO.i"
 	@echo "... src/engine/VBO.s"

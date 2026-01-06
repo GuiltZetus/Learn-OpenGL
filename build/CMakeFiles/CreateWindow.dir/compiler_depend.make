@@ -217,6 +217,30 @@ CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o: /home/guilt/Project/OPENGL/
   /usr/lib/gcc/x86_64-redhat-linux/15/include/stddef.h \
   /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h
 
+CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.o: /home/guilt/Project/OPENGL/CreateWindow/src/engine/VAO.cpp \
+  /home/guilt/Project/OPENGL/CreateWindow/external/glad/include/glad.h \
+  /home/guilt/Project/OPENGL/CreateWindow/include/engine/VAO.h \
+  /usr/include/KHR/khrplatform.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/sys/cdefs.h \
+  /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h
+
 CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o: /home/guilt/Project/OPENGL/CreateWindow/src/engine/VBO.cpp \
   /home/guilt/Project/OPENGL/CreateWindow/external/glad/include/glad.h \
   /home/guilt/Project/OPENGL/CreateWindow/include/engine/VBO.h \
@@ -429,6 +453,7 @@ CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o: /home/guilt/Project/OPENGL/Cre
 CMakeFiles/CreateWindow.dir/src/main.cpp.o: /home/guilt/Project/OPENGL/CreateWindow/src/main.cpp \
   /home/guilt/Project/OPENGL/CreateWindow/external/glad/include/glad.h \
   /home/guilt/Project/OPENGL/CreateWindow/include/engine/Shader.h \
+  /home/guilt/Project/OPENGL/CreateWindow/include/engine/VAO.h \
   /home/guilt/Project/OPENGL/CreateWindow/include/engine/VBO.h \
   /usr/include/GLFW/glfw3.h \
   /usr/include/KHR/khrplatform.h \
@@ -721,10 +746,13 @@ CreateWindow: /lib64/ld-linux-x86-64.so.2 \
   /usr/lib64/libglfw.so.3.4 \
   /usr/lib64/libxcb.so.1 \
   CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o \
+  CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.o \
   CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o \
   CMakeFiles/CreateWindow.dir/src/main.cpp.o \
   libglad.a
 
+
+CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.o:
 
 CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o:
 
@@ -780,6 +808,10 @@ CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o:
 
 /usr/include/c++/15/tr1/ell_integral.tcc:
 
+/usr/include/c++/15/tr1/beta_function.tcc:
+
+/usr/include/c++/15/tr1/bessel_function.tcc:
+
 /usr/include/c++/15/bits/range_access.h:
 
 /usr/include/c++/15/bits/postypes.h:
@@ -797,8 +829,6 @@ CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o:
 /usr/include/c++/15/tr1/hypergeometric.tcc:
 
 /usr/include/bits/mathcalls-macros.h:
-
-/usr/include/c++/15/tr1/beta_function.tcc:
 
 /usr/include/bits/types/struct_timespec.h:
 
@@ -1060,6 +1090,8 @@ CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o:
 
 /usr/include/bits/types/cookie_io_functions_t.h:
 
+/home/guilt/Project/OPENGL/CreateWindow/src/engine/VAO.cpp:
+
 /usr/include/bits/types/time_t.h:
 
 /usr/include/bits/thread-shared-types.h:
@@ -1176,6 +1208,8 @@ libglad.a:
 
 /usr/include/c++/15/stdexcept:
 
+/home/guilt/Project/OPENGL/CreateWindow/include/engine/VAO.h:
+
 /usr/include/c++/15/string:
 
 /usr/include/c++/15/string_view:
@@ -1199,8 +1233,6 @@ libglad.a:
 /usr/include/c++/15/concepts:
 
 /home/guilt/Project/OPENGL/CreateWindow/include/engine/VBO.h:
-
-/usr/include/c++/15/tr1/bessel_function.tcc:
 
 /usr/include/c++/15/debug/assertions.h:
 
