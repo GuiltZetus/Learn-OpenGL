@@ -14,6 +14,7 @@ CMakeFiles/CreateWindow.dir/src/main.cpp.o: \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h /usr/include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-redhat-linux/15/include/stddef.h \
+ /usr/include/GL/gl.h \
  /home/guilt/Project/OPENGL/CreateWindow/include/engine/Shader.h \
  /usr/include/c++/15/string /usr/include/c++/15/bits/requires_hosted.h \
  /usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h \
@@ -181,4 +182,7 @@ CMakeFiles/CreateWindow.dir/src/main.cpp.o: \
  /usr/include/c++/15/bits/allocated_ptr.h \
  /usr/include/c++/15/bits/unique_ptr.h \
  /usr/include/c++/15/ext/aligned_buffer.h \
- /usr/include/c++/15/bits/fs_dir.h /usr/include/c++/15/bits/fs_ops.h
+ /usr/include/c++/15/bits/fs_dir.h /usr/include/c++/15/bits/fs_ops.h \
+ /home/guilt/Project/OPENGL/CreateWindow/include/tools/ImageLoader.h \
+ /home/guilt/Project/OPENGL/CreateWindow/external/stb/stb_image.h \
+ /usr/include/c++/15/stdlib.h

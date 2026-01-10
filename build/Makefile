@@ -262,6 +262,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/tools/stb_image.o: src/tools/stb_image.cpp.o
+.PHONY : src/tools/stb_image.o
+
+# target to build an object file
+src/tools/stb_image.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.o
+.PHONY : src/tools/stb_image.cpp.o
+
+src/tools/stb_image.i: src/tools/stb_image.cpp.i
+.PHONY : src/tools/stb_image.i
+
+# target to preprocess a source file
+src/tools/stb_image.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.i
+.PHONY : src/tools/stb_image.cpp.i
+
+src/tools/stb_image.s: src/tools/stb_image.cpp.s
+.PHONY : src/tools/stb_image.s
+
+# target to generate assembly for a file
+src/tools/stb_image.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.s
+.PHONY : src/tools/stb_image.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -287,6 +311,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/tools/stb_image.o"
+	@echo "... src/tools/stb_image.i"
+	@echo "... src/tools/stb_image.s"
 .PHONY : help
 
 

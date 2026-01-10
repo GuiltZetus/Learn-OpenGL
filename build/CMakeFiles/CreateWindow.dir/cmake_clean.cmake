@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o.d"
   "CMakeFiles/CreateWindow.dir/src/main.cpp.o"
   "CMakeFiles/CreateWindow.dir/src/main.cpp.o.d"
+  "CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.o"
+  "CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.o.d"
   "CreateWindow"
   "CreateWindow.pdb"
 )

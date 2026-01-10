@@ -6,6 +6,7 @@ CreateWindow: \
   CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o \
   CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o \
   CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.o \
+  CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.o \
   libglad.a \
   /usr/lib64/libglfw.so.3.4 \
   /usr/lib64/libGLX.so \
@@ -56,6 +57,8 @@ CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o:
 CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o:
 
 CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.o:
+
+CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.o:
 
 libglad.a:
 
