@@ -480,19 +480,9 @@ CMakeFiles/CreateWindow.dir/src/main.cpp.o: /home/guilt/Project/OPENGL/CreateWin
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
-  /usr/include/bits/flt-eval-method.h \
-  /usr/include/bits/fp-fast.h \
-  /usr/include/bits/fp-logb.h \
-  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
-  /usr/include/bits/math-vector.h \
-  /usr/include/bits/mathcalls-helper-functions.h \
-  /usr/include/bits/mathcalls-macros.h \
-  /usr/include/bits/mathcalls-narrow.h \
-  /usr/include/bits/mathcalls.h \
   /usr/include/bits/pthread_stack_min-dynamic.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
@@ -546,7 +536,6 @@ CMakeFiles/CreateWindow.dir/src/main.cpp.o: /home/guilt/Project/OPENGL/CreateWin
   /usr/include/c++/15/backward/binders.h \
   /usr/include/c++/15/bit \
   /usr/include/c++/15/bits/alloc_traits.h \
-  /usr/include/c++/15/bits/allocated_ptr.h \
   /usr/include/c++/15/bits/allocator.h \
   /usr/include/c++/15/bits/basic_ios.h \
   /usr/include/c++/15/bits/basic_ios.tcc \
@@ -554,8 +543,6 @@ CMakeFiles/CreateWindow.dir/src/main.cpp.o: /home/guilt/Project/OPENGL/CreateWin
   /usr/include/c++/15/bits/basic_string.tcc \
   /usr/include/c++/15/bits/char_traits.h \
   /usr/include/c++/15/bits/charconv.h \
-  /usr/include/c++/15/bits/chrono.h \
-  /usr/include/c++/15/bits/codecvt.h \
   /usr/include/c++/15/bits/concept_check.h \
   /usr/include/c++/15/bits/cpp_type_traits.h \
   /usr/include/c++/15/bits/cxxabi_forced.h \
@@ -563,11 +550,6 @@ CMakeFiles/CreateWindow.dir/src/main.cpp.o: /home/guilt/Project/OPENGL/CreateWin
   /usr/include/c++/15/bits/exception.h \
   /usr/include/c++/15/bits/exception_defines.h \
   /usr/include/c++/15/bits/exception_ptr.h \
-  /usr/include/c++/15/bits/fs_dir.h \
-  /usr/include/c++/15/bits/fs_fwd.h \
-  /usr/include/c++/15/bits/fs_ops.h \
-  /usr/include/c++/15/bits/fs_path.h \
-  /usr/include/c++/15/bits/fstream.tcc \
   /usr/include/c++/15/bits/functexcept.h \
   /usr/include/c++/15/bits/functional_hash.h \
   /usr/include/c++/15/bits/hash_bytes.h \
@@ -576,11 +558,8 @@ CMakeFiles/CreateWindow.dir/src/main.cpp.o: /home/guilt/Project/OPENGL/CreateWin
   /usr/include/c++/15/bits/istream.tcc \
   /usr/include/c++/15/bits/locale_classes.h \
   /usr/include/c++/15/bits/locale_classes.tcc \
-  /usr/include/c++/15/bits/locale_conv.h \
   /usr/include/c++/15/bits/locale_facets.h \
   /usr/include/c++/15/bits/locale_facets.tcc \
-  /usr/include/c++/15/bits/locale_facets_nonio.h \
-  /usr/include/c++/15/bits/locale_facets_nonio.tcc \
   /usr/include/c++/15/bits/localefwd.h \
   /usr/include/c++/15/bits/memory_resource.h \
   /usr/include/c++/15/bits/memoryfwd.h \
@@ -590,18 +569,12 @@ CMakeFiles/CreateWindow.dir/src/main.cpp.o: /home/guilt/Project/OPENGL/CreateWin
   /usr/include/c++/15/bits/ostream.h \
   /usr/include/c++/15/bits/ostream.tcc \
   /usr/include/c++/15/bits/ostream_insert.h \
-  /usr/include/c++/15/bits/parse_numbers.h \
   /usr/include/c++/15/bits/postypes.h \
   /usr/include/c++/15/bits/predefined_ops.h \
   /usr/include/c++/15/bits/ptr_traits.h \
-  /usr/include/c++/15/bits/quoted_string.h \
   /usr/include/c++/15/bits/range_access.h \
   /usr/include/c++/15/bits/refwrap.h \
   /usr/include/c++/15/bits/requires_hosted.h \
-  /usr/include/c++/15/bits/shared_ptr.h \
-  /usr/include/c++/15/bits/shared_ptr_base.h \
-  /usr/include/c++/15/bits/specfun.h \
-  /usr/include/c++/15/bits/sstream.tcc \
   /usr/include/c++/15/bits/std_abs.h \
   /usr/include/c++/15/bits/stl_algobase.h \
   /usr/include/c++/15/bits/stl_construct.h \
@@ -614,7 +587,6 @@ CMakeFiles/CreateWindow.dir/src/main.cpp.o: /home/guilt/Project/OPENGL/CreateWin
   /usr/include/c++/15/bits/streambuf_iterator.h \
   /usr/include/c++/15/bits/string_view.tcc \
   /usr/include/c++/15/bits/stringfwd.h \
-  /usr/include/c++/15/bits/unique_ptr.h \
   /usr/include/c++/15/bits/uses_allocator.h \
   /usr/include/c++/15/bits/uses_allocator_args.h \
   /usr/include/c++/15/bits/utility.h \
@@ -622,67 +594,40 @@ CMakeFiles/CreateWindow.dir/src/main.cpp.o: /home/guilt/Project/OPENGL/CreateWin
   /usr/include/c++/15/cctype \
   /usr/include/c++/15/cerrno \
   /usr/include/c++/15/clocale \
-  /usr/include/c++/15/cmath \
-  /usr/include/c++/15/codecvt \
   /usr/include/c++/15/concepts \
   /usr/include/c++/15/cstddef \
-  /usr/include/c++/15/cstdint \
   /usr/include/c++/15/cstdio \
   /usr/include/c++/15/cstdlib \
-  /usr/include/c++/15/ctime \
   /usr/include/c++/15/cwchar \
   /usr/include/c++/15/cwctype \
   /usr/include/c++/15/debug/assertions.h \
   /usr/include/c++/15/debug/debug.h \
   /usr/include/c++/15/exception \
-  /usr/include/c++/15/ext/aligned_buffer.h \
   /usr/include/c++/15/ext/alloc_traits.h \
   /usr/include/c++/15/ext/atomicity.h \
-  /usr/include/c++/15/ext/concurrence.h \
   /usr/include/c++/15/ext/numeric_traits.h \
   /usr/include/c++/15/ext/string_conversions.h \
   /usr/include/c++/15/ext/type_traits.h \
-  /usr/include/c++/15/filesystem \
-  /usr/include/c++/15/fstream \
   /usr/include/c++/15/initializer_list \
-  /usr/include/c++/15/iomanip \
   /usr/include/c++/15/ios \
   /usr/include/c++/15/iosfwd \
   /usr/include/c++/15/iostream \
   /usr/include/c++/15/istream \
-  /usr/include/c++/15/limits \
-  /usr/include/c++/15/locale \
   /usr/include/c++/15/new \
   /usr/include/c++/15/ostream \
   /usr/include/c++/15/pstl/pstl_config.h \
-  /usr/include/c++/15/ratio \
-  /usr/include/c++/15/sstream \
   /usr/include/c++/15/stdexcept \
   /usr/include/c++/15/stdlib.h \
   /usr/include/c++/15/streambuf \
   /usr/include/c++/15/string \
   /usr/include/c++/15/string_view \
   /usr/include/c++/15/system_error \
-  /usr/include/c++/15/tr1/bessel_function.tcc \
-  /usr/include/c++/15/tr1/beta_function.tcc \
-  /usr/include/c++/15/tr1/ell_integral.tcc \
-  /usr/include/c++/15/tr1/exp_integral.tcc \
-  /usr/include/c++/15/tr1/gamma.tcc \
-  /usr/include/c++/15/tr1/hypergeometric.tcc \
-  /usr/include/c++/15/tr1/legendre_function.tcc \
-  /usr/include/c++/15/tr1/modified_bessel_func.tcc \
-  /usr/include/c++/15/tr1/poly_hermite.tcc \
-  /usr/include/c++/15/tr1/poly_laguerre.tcc \
-  /usr/include/c++/15/tr1/riemann_zeta.tcc \
-  /usr/include/c++/15/tr1/special_function_util.h \
   /usr/include/c++/15/tuple \
   /usr/include/c++/15/type_traits \
   /usr/include/c++/15/typeinfo \
   /usr/include/c++/15/x86_64-redhat-linux/bits/atomic_word.h \
-  /usr/include/c++/15/x86_64-redhat-linux/bits/basic_file.h \
   /usr/include/c++/15/x86_64-redhat-linux/bits/c++allocator.h \
   /usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h \
-  /usr/include/c++/15/x86_64-redhat-linux/bits/c++io.h \
   /usr/include/c++/15/x86_64-redhat-linux/bits/c++locale.h \
   /usr/include/c++/15/x86_64-redhat-linux/bits/cpu_defines.h \
   /usr/include/c++/15/x86_64-redhat-linux/bits/ctype_base.h \
@@ -690,9 +635,7 @@ CMakeFiles/CreateWindow.dir/src/main.cpp.o: /home/guilt/Project/OPENGL/CreateWin
   /usr/include/c++/15/x86_64-redhat-linux/bits/error_constants.h \
   /usr/include/c++/15/x86_64-redhat-linux/bits/gthr-default.h \
   /usr/include/c++/15/x86_64-redhat-linux/bits/gthr.h \
-  /usr/include/c++/15/x86_64-redhat-linux/bits/messages_members.h \
   /usr/include/c++/15/x86_64-redhat-linux/bits/os_defines.h \
-  /usr/include/c++/15/x86_64-redhat-linux/bits/time_members.h \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -700,14 +643,12 @@ CMakeFiles/CreateWindow.dir/src/main.cpp.o: /home/guilt/Project/OPENGL/CreateWin
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
-  /usr/include/libintl.h \
   /usr/include/linux/errno.h \
   /usr/include/linux/posix_types.h \
   /usr/include/linux/sched/types.h \
   /usr/include/linux/stddef.h \
   /usr/include/linux/types.h \
   /usr/include/locale.h \
-  /usr/include/math.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
@@ -942,51 +883,15 @@ CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o:
 
 /usr/include/string.h:
 
+/usr/include/math.h:
+
 /usr/include/linux/limits.h:
 
 /usr/include/limits.h:
 
-/usr/include/c++/15/math.h:
-
-/usr/include/bits/xopen_lim.h:
-
-/usr/include/bits/posix2_lim.h:
-
-/usr/include/math.h:
-
-/usr/include/c++/15/x86_64-redhat-linux/bits/messages_members.h:
-
 /usr/include/c++/15/tr1/special_function_util.h:
 
-/usr/include/c++/15/x86_64-redhat-linux/bits/time_members.h:
-
-/usr/include/c++/15/tr1/riemann_zeta.tcc:
-
-/usr/include/c++/15/tr1/poly_hermite.tcc:
-
-/usr/include/c++/15/tr1/modified_bessel_func.tcc:
-
-/usr/include/c++/15/tr1/legendre_function.tcc:
-
-/usr/include/c++/15/tr1/gamma.tcc:
-
-/usr/include/c++/15/tr1/exp_integral.tcc:
-
-/usr/include/c++/15/tr1/ell_integral.tcc:
-
-/usr/include/c++/15/tr1/beta_function.tcc:
-
-/usr/include/c++/15/tr1/bessel_function.tcc:
-
-/usr/include/c++/15/locale:
-
-/usr/include/c++/15/limits:
-
 /usr/include/c++/15/bits/range_access.h:
-
-/usr/include/bits/local_lim.h:
-
-/usr/include/c++/15/bits/postypes.h:
 
 /usr/include/c++/15/bits/ostream.tcc:
 
@@ -998,11 +903,11 @@ CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o:
 
 /usr/include/asm-generic/int-ll64.h:
 
-/usr/include/c++/15/tr1/hypergeometric.tcc:
-
-/usr/include/bits/mathcalls-macros.h:
+/usr/include/c++/15/tr1/beta_function.tcc:
 
 /usr/include/bits/types/struct_timespec.h:
+
+/usr/include/c++/15/bits/stl_function.h:
 
 /usr/include/c++/15/cwchar:
 
@@ -1018,8 +923,6 @@ CMakeFiles/CreateWindow.dir/src/main.cpp.o:
 
 /usr/include/ctype.h:
 
-/usr/include/c++/15/bits/locale_conv.h:
-
 /usr/include/c++/15/bits/locale_classes.tcc:
 
 /lib64/libm.so.6:
@@ -1030,9 +933,13 @@ CMakeFiles/CreateWindow.dir/src/main.cpp.o:
 
 /usr/include/bits/types/locale_t.h:
 
+/usr/include/c++/15/bits/istream.tcc:
+
 /usr/include/c++/15/bits/functional_hash.h:
 
 /usr/include/c++/15/ext/type_traits.h:
+
+/usr/include/c++/15/bits/requires_hosted.h:
 
 /usr/include/c++/15/cstdlib:
 
@@ -1045,10 +952,6 @@ CMakeFiles/CreateWindow.dir/src/main.cpp.o:
 /usr/include/asm/bitsperlong.h:
 
 /usr/include/c++/15/bits/ostream.h:
-
-/usr/include/assert.h:
-
-/usr/include/c++/15/fstream:
 
 /usr/include/bits/libm-simd-decl-stubs.h:
 
@@ -1078,6 +981,8 @@ CMakeFiles/CreateWindow.dir/src/main.cpp.o:
 
 /usr/include/sys/types.h:
 
+/usr/include/c++/15/tr1/riemann_zeta.tcc:
+
 /usr/include/bits/timesize.h:
 
 /usr/include/c++/15/bits/locale_facets.h:
@@ -1090,7 +995,11 @@ CMakeFiles/CreateWindow.dir/src/main.cpp.o:
 
 /usr/include/c++/15/bits/basic_ios.h:
 
+/usr/include/c++/15/tr1/modified_bessel_func.tcc:
+
 /usr/include/bits/types/sigset_t.h:
+
+/usr/include/c++/15/tr1/poly_hermite.tcc:
 
 /usr/include/c++/15/bits/refwrap.h:
 
@@ -1110,11 +1019,13 @@ CMakeFiles/CreateWindow.dir/src/main.cpp.o:
 
 /usr/include/c++/15/istream:
 
+/usr/include/c++/15/bits/exception_ptr.h:
+
+/usr/include/bits/floatn-common.h:
+
 /usr/include/c++/15/x86_64-redhat-linux/bits/error_constants.h:
 
 /usr/include/bits/types/mbstate_t.h:
-
-/usr/include/c++/15/bits/fs_ops.h:
 
 /usr/include/c++/15/bits/stl_construct.h:
 
@@ -1154,12 +1065,6 @@ CMakeFiles/CreateWindow.dir/src/main.cpp.o:
 
 /usr/include/c++/15/bits/ios_base.h:
 
-/usr/include/bits/posix1_lim.h:
-
-/usr/include/c++/15/sstream:
-
-/usr/include/wchar.h:
-
 /usr/include/c++/15/bits/alloc_traits.h:
 
 /usr/include/asm/posix_types.h:
@@ -1171,8 +1076,6 @@ CMakeFiles/CreateWindow.dir/src/main.cpp.o:
 /usr/include/bits/types/__mbstate_t.h:
 
 /usr/include/c++/15/x86_64-redhat-linux/bits/ctype_inline.h:
-
-/usr/include/c++/15/iomanip:
 
 /usr/include/asm/posix_types_64.h:
 
@@ -1190,25 +1093,25 @@ CMakeFiles/CreateWindow.dir/src/main.cpp.o:
 
 /home/guilt/Project/OPENGL/CreateWindow/external/glad/include/glad.h:
 
-/usr/include/c++/15/tr1/poly_laguerre.tcc:
+/usr/include/bits/types/__fpos_t.h:
+
+/usr/include/bits/mathcalls.h:
 
 /usr/include/c++/15/bits/charconv.h:
 
 /usr/include/bits/types/clock_t.h:
 
-/usr/include/bits/types/__fpos_t.h:
-
-/usr/include/bits/mathcalls.h:
+/usr/include/c++/15/tr1/poly_laguerre.tcc:
 
 /usr/include/asm/types.h:
-
-/usr/include/libintl.h:
 
 /usr/include/bits/endianness.h:
 
 /usr/include/bits/types.h:
 
 /usr/include/c++/15/bits/streambuf_iterator.h:
+
+/usr/include/c++/15/tr1/exp_integral.tcc:
 
 /usr/include/bits/atomic_wide_counter.h:
 
@@ -1245,6 +1148,8 @@ CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o:
 /usr/include/asm-generic/bitsperlong.h:
 
 /usr/include/asm-generic/types.h:
+
+/usr/include/c++/15/math.h:
 
 /usr/include/bits/types/__sigset_t.h:
 
@@ -1336,15 +1241,21 @@ CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o:
 
 /usr/include/c++/15/bits/stringfwd.h:
 
-/usr/include/c++/15/bits/fs_path.h:
-
-/usr/include/c++/15/bits/shared_ptr.h:
-
 /usr/include/c++/15/bits/uses_allocator_args.h:
 
 /usr/include/c++/15/cerrno:
 
+/usr/include/c++/15/sstream:
+
+/usr/include/wchar.h:
+
+/usr/include/bits/posix1_lim.h:
+
 /usr/include/c++/15/cstdio:
+
+/usr/include/c++/15/bits/postypes.h:
+
+/usr/include/bits/local_lim.h:
 
 libglad.a:
 
@@ -1353,8 +1264,6 @@ libglad.a:
 /usr/include/c++/15/debug/debug.h:
 
 /usr/include/c++/15/exception:
-
-/usr/include/c++/15/bits/locale_facets_nonio.h:
 
 /usr/include/c++/15/ext/alloc_traits.h:
 
@@ -1366,11 +1275,11 @@ libglad.a:
 
 /usr/include/c++/15/ext/numeric_traits.h:
 
-/usr/include/c++/15/bits/quoted_string.h:
-
 /usr/include/c++/15/ios:
 
 /usr/include/c++/15/iosfwd:
+
+/usr/include/c++/15/limits:
 
 /usr/include/linux/errno.h:
 
@@ -1383,8 +1292,6 @@ libglad.a:
 /usr/include/c++/15/ostream:
 
 /usr/include/c++/15/pstl/pstl_config.h:
-
-/usr/include/c++/15/ratio:
 
 /usr/include/c++/15/stdexcept:
 
@@ -1412,17 +1319,27 @@ libglad.a:
 
 /home/guilt/Project/OPENGL/CreateWindow/include/engine/VBO.h:
 
+/usr/include/c++/15/tr1/bessel_function.tcc:
+
+/usr/include/c++/15/x86_64-redhat-linux/bits/cpu_defines.h:
+
 /usr/include/c++/15/debug/assertions.h:
 
 /usr/include/sys/cdefs.h:
 
 /usr/include/GLFW/glfw3.h:
 
+/usr/include/c++/15/tr1/gamma.tcc:
+
 /usr/include/stdint.h:
 
 /usr/include/endian.h:
 
 /usr/include/c++/15/cmath:
+
+/usr/include/c++/15/cstddef:
+
+/usr/include/errno.h:
 
 /usr/include/gnu/stubs-64.h:
 
@@ -1434,10 +1351,6 @@ libglad.a:
 
 /usr/include/linux/sched/types.h:
 
-/usr/include/c++/15/x86_64-redhat-linux/bits/cpu_defines.h:
-
-/usr/include/c++/15/bits/chrono.h:
-
 /usr/include/c++/15/bits/locale_classes.h:
 
 /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h:
@@ -1447,10 +1360,6 @@ libglad.a:
 /usr/include/GL/gl.h:
 
 /usr/include/locale.h:
-
-/usr/include/c++/15/bits/stl_function.h:
-
-/usr/include/c++/15/bits/fs_dir.h:
 
 /usr/lib64/crti.o:
 
@@ -1474,12 +1383,6 @@ libglad.a:
 
 /usr/lib/gcc/x86_64-redhat-linux/15/include/stddef.h:
 
-/usr/include/c++/15/bits/exception_ptr.h:
-
-/usr/include/bits/floatn-common.h:
-
-/usr/include/c++/15/ext/concurrence.h:
-
 /usr/include/bits/select.h:
 
 /home/guilt/Project/OPENGL/CreateWindow/src/engine/VBO.cpp:
@@ -1490,56 +1393,42 @@ libglad.a:
 
 /home/guilt/Project/OPENGL/CreateWindow/external/stb/stb_image.h:
 
+/usr/include/c++/15/stdlib.h:
+
+/home/guilt/Project/OPENGL/CreateWindow/src/tools/stb_image.cpp:
+
+/usr/include/bits/mathcalls-macros.h:
+
+/usr/include/c++/15/tr1/hypergeometric.tcc:
+
+/usr/include/c++/15/fstream:
+
+/usr/include/assert.h:
+
 /usr/include/wctype.h:
 
 /usr/include/sched.h:
 
 /usr/include/bits/fp-fast.h:
 
-/usr/include/c++/15/codecvt:
-
 /usr/include/bits/iscanonical.h:
 
-/usr/include/bits/uio_lim.h:
+/usr/include/bits/mathcalls-narrow.h:
+
+/usr/include/bits/posix2_lim.h:
 
 /usr/include/c++/15/bits/concept_check.h:
 
 /usr/include/bits/math-vector.h:
 
-/usr/include/bits/mathcalls-narrow.h:
+/usr/include/bits/uio_lim.h:
 
-/usr/include/c++/15/bits/istream.tcc:
-
-/usr/include/c++/15/bits/allocated_ptr.h:
-
-/usr/include/c++/15/cstddef:
-
-/usr/include/errno.h:
-
-/usr/include/c++/15/bits/fs_fwd.h:
-
-/usr/include/c++/15/bits/locale_facets_nonio.tcc:
-
-/usr/include/c++/15/bits/parse_numbers.h:
-
-/usr/include/c++/15/bits/shared_ptr_base.h:
+/usr/include/bits/xopen_lim.h:
 
 /usr/include/c++/15/backward/binders.h:
 
 /usr/include/c++/15/bits/specfun.h:
 
-/usr/include/c++/15/bits/unique_ptr.h:
+/usr/include/c++/15/tr1/ell_integral.tcc:
 
-/usr/include/c++/15/cstdint:
-
-/usr/include/c++/15/stdlib.h:
-
-/usr/include/c++/15/ctime:
-
-/home/guilt/Project/OPENGL/CreateWindow/src/tools/stb_image.cpp:
-
-/usr/include/c++/15/ext/aligned_buffer.h:
-
-/usr/include/c++/15/bits/requires_hosted.h:
-
-/usr/include/c++/15/filesystem:
+/usr/include/c++/15/tr1/legendre_function.tcc:
