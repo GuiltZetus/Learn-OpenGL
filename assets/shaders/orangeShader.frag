@@ -1,6 +1,5 @@
 #version 330 core
 
-in vec3 ourColor;
 in vec3 ourPos;
 in vec2 TexCoord;
 
