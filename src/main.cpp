@@ -7,8 +7,10 @@
 #include <engine/VBO.h>
 
 // gl math include
+#include <glm/detail/qualifier.hpp>
 #include <glm/ext/matrix_transform.hpp>
 #include <glm/fwd.hpp>
+#include <glm/geometric.hpp>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
@@ -19,27 +21,35 @@
 
 #include <tools/ImageLoader.h>
 
+// GLOBAL VARIABLES
 // settings for window size
 const GLuint SCR_WIDTH = 800;
 const GLuint SCR_HEIGHT = 600;
 
-// callback for changing viewport size after init
-void framebuffer_size_callback(GLFWwindow *window, int width, int height) {
-  glViewport(0, 0, width, height);
-}
+// camera
+glm::vec3 cameraPos = glm::vec3(0.0f, 0.0f, 3.0f);
+glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
+glm::vec3 cameraUp = glm::vec3(0.0f, 1.0f, 0.0f);
 
-// input cotrol for glfw
-void processInput(GLFWwindow *window, Shader object) {
-  if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
-    glfwSetWindowShouldClose(window, true);
-  }
-  if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS) {
-    object.setFloat("MixRate", 0.1);
-  }
-  if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS) {
-    object.setFloat("MixRate", 0.4);
-  }
-}
+// default yaw/pitch angle for looking around with camera
+float yaw = -90.0f;
+float pitch = 0.0f;
+
+// delta time default
+float deltaTime = 0.0f;
+float lastFrame = 0.0f;
+
+// default last X,Y coords for camera rotation (camera start at center)
+float lastX = (float)SCR_WIDTH / 2;
+float lastY = (float)SCR_HEIGHT / 2;
+
+// check for fixing sudden camera jump from cursor entering Window
+bool firstMouse = true;
+
+// callback for changing viewport size after init
+void framebuffer_size_callback(GLFWwindow *window, int width, int height);
+void processInput(GLFWwindow *window, Shader object);
+void mouse_callback(GLFWwindow *window, double xposIn, double yposIn);
 
 int main() {
   // init the glfw window
@@ -59,6 +69,9 @@ int main() {
   // make glfw window the main context of the current thread
   glfwMakeContextCurrent(window);
   glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+  // set mouse center locked and get mouse input
+  glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+  glfwSetCursorPosCallback(window, mouse_callback);
 
   if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
     std::cout << "Failed to initialize GLAD" << std::endl;
@@ -188,7 +201,7 @@ int main() {
   glm::mat4 base = glm::mat4(1.0f);
   // model = glm::rotate(model, glm::radians(-55.0f), glm::vec3(1.0f, 0.0f, 0.0f));
 
-  // view camera translate (shift the entire scene forward)
+  // view camera translate
   glm::mat4 view = glm::mat4(1.0f);
   view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
 
@@ -217,6 +230,14 @@ int main() {
 
     basicShaderProgram.use();
 
+    // calculate delta time
+    float currentFrame = glfwGetTime();
+    deltaTime = currentFrame - lastFrame;
+    lastFrame = currentFrame;
+
+    glm::mat4 view;
+    view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
+
     VAOs[0].bind();
     int modelLoc = glGetUniformLocation(basicShaderProgram.ID, "model");
     int projectionLoc = glGetUniformLocation(basicShaderProgram.ID, "projection");
@@ -226,6 +247,7 @@ int main() {
 
     // 4. use the shader program and draw the triangle
 
+    // draw the cube
     for (unsigned int i = 0; i < 10; i++) {
       // set world coordiantes for all model
       glm::mat4 model = glm::mat4(1.0f);
@@ -253,4 +275,65 @@ int main() {
   std::cout << "Window is closing" << std::endl;
   glfwTerminate();
   return 0;
+}
+
+void framebuffer_size_callback(GLFWwindow *window, int width, int height) {
+  glViewport(0, 0, width, height);
+}
+
+// input cotrol for glfw
+void processInput(GLFWwindow *window, Shader object) {
+  float cameraSpeed = 2.5f * deltaTime;
+
+  if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
+    glfwSetWindowShouldClose(window, true);
+  }
+  if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS) {
+    object.setFloat("MixRate", 0.1);
+  }
+  if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS) {
+    object.setFloat("MixRate", 0.4);
+  }
+  if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
+    cameraPos += cameraSpeed * cameraFront;
+  if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
+    cameraPos -= cameraSpeed * cameraFront;
+  if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
+    cameraPos -= glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+  if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
+    cameraPos += glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+}
+
+void mouse_callback(GLFWwindow *window, double xposIn, double yposIn) {
+  if (firstMouse) // initially set to true
+  {
+    lastX = xposIn;
+    lastY = yposIn;
+    firstMouse = false;
+  }
+  float xoffset = xposIn - lastX;
+  float yoffset = lastY - yposIn;
+
+  lastX = xposIn;
+  lastY = yposIn;
+
+  const float mouse_sensitivity = 0.1f;
+  xoffset *= mouse_sensitivity;
+  yoffset *= mouse_sensitivity;
+
+  yaw += xoffset;
+  pitch += yoffset;
+
+  if (pitch > 89.0f)
+    pitch = 89.0f;
+  if (pitch < -89.0f)
+    pitch = -89.0f;
+
+  // look around matrix
+  glm::vec3 lookDirection;
+  lookDirection.x = cos(glm::radians(yaw)) * cos(glm::radians(pitch));
+  lookDirection.y = sin(glm::radians(pitch));
+  lookDirection.z = sin(glm::radians(yaw)) * cos(glm::radians(pitch));
+
+  cameraFront = glm::normalize(lookDirection);
 }

@@ -143,15 +143,16 @@ CMakeFiles/CreateWindow.dir/src/main.cpp.o: \
  /usr/include/c++/15/bits/basic_ios.tcc \
  /usr/include/c++/15/bits/ostream.tcc /usr/include/c++/15/istream \
  /usr/include/c++/15/bits/istream.tcc \
+ /usr/include/glm/detail/qualifier.hpp /usr/include/glm/detail/setup.hpp \
+ /usr/include/c++/15/cassert /usr/include/assert.h \
+ /usr/include/glm/simd/platform.h /usr/include/c++/15/cstdint \
  /usr/include/glm/ext/matrix_transform.hpp \
  /usr/include/glm/gtc/constants.hpp \
  /usr/include/glm/ext/scalar_constants.hpp \
- /usr/include/glm/detail/setup.hpp /usr/include/c++/15/cassert \
- /usr/include/assert.h /usr/include/glm/simd/platform.h \
- /usr/include/c++/15/cstdint /usr/include/glm/ext/scalar_constants.inl \
- /usr/include/c++/15/limits /usr/include/glm/gtc/constants.inl \
- /usr/include/glm/geometric.hpp /usr/include/glm/detail/type_vec3.hpp \
- /usr/include/glm/detail/qualifier.hpp /usr/include/glm/detail/setup.hpp \
+ /usr/include/glm/detail/setup.hpp \
+ /usr/include/glm/ext/scalar_constants.inl /usr/include/c++/15/limits \
+ /usr/include/glm/gtc/constants.inl /usr/include/glm/geometric.hpp \
+ /usr/include/glm/detail/type_vec3.hpp \
  /usr/include/glm/detail/type_vec3.inl \
  /usr/include/glm/detail/compute_vector_relational.hpp \
  /usr/include/glm/detail/func_geometric.inl \
