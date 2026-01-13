@@ -1,0 +1,3 @@
+SortIncludes: false      # Don't reorder #includes
+IncludeBlocks: Preserve  # Keep blocks together
+ColumnLimit : 100

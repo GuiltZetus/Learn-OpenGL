@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/guilt/Project/OPENGL/CreateWindow/include
+CXX_INCLUDES = -I/home/guilt/Project/OPENGL/CreateWindow/include -I/home/guilt/Project/OPENGL/CreateWindow/external/stb -I/home/guilt/Project/OPENGL/CreateWindow/external/glad/include
 
 CXX_FLAGS = -g -std=gnu++17
 

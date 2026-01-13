@@ -1,35 +1,65 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.15)
 
 project(CreateWindow LANGUAGES C CXX)
 
-# Use modern C++
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+# --------------------
+# C++ standard
+# --------------------
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Prefer modern OpenGL (GLVND)
-cmake_policy(SET CMP0072 NEW)
-set(OpenGL_GL_PREFERENCE GLVND)
 
-# Find system libraries
-find_package(OpenGL REQUIRED)
-find_package(glfw3 CONFIG REQUIRED)
-
-# Build GLAD as a static library
-add_library(glad src/glad.c)
-
-# Tell CMake where glad headers are
-target_include_directories(glad PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}/include
-)
-
-# Your executable
+# --------------------
+# Executable
+# --------------------
 add_executable(CreateWindow
     src/main.cpp
+    src/engine/Shader.cpp
+    src/engine/VBO.cpp
+    src/engine/VAO.cpp
+    src/engine/Camera.cpp
+    src/tools/stb_image.cpp
 )
 
-# Link everything together
-target_link_libraries(CreateWindow
-    glad
-    glfw
-    OpenGL::GL
+# --------------------
+# Include directories
+# --------------------
+target_include_directories(CreateWindow PRIVATE
+    include                # include/engine/Shader.h
+    external/stb           # stb_image.h
+    external/glad/include  # glad.h
 )
+
+# --------------------
+# GLAD (static library)
+# --------------------
+add_library(glad STATIC
+    external/glad/src/glad.c
+)
+
+target_include_directories(glad PUBLIC
+    external/glad/include
+)
+
+# --------------------
+# OpenGL & GLFW
+# --------------------
+find_package(OpenGL REQUIRED)
+find_package(glfw3 REQUIRED)
+
+# --------------------
+# Link libraries
+# --------------------
+target_link_libraries(CreateWindow PRIVATE
+    glad
+    OpenGL::GL
+    glfw
+)
+
+# --------------------
+# Assets (shaders)
+# --------------------
+# Copy shaders to build folder so relative paths work
+file(COPY assets DESTINATION ${CMAKE_BINARY_DIR})

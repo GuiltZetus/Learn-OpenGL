@@ -86,14 +86,94 @@ CMakeFiles/CreateWindow.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CreateWindow.dir/src/main.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guilt/Project/OPENGL/CreateWindow/src/main.cpp -o CMakeFiles/CreateWindow.dir/src/main.cpp.s
 
+CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o: CMakeFiles/CreateWindow.dir/flags.make
+CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o: /home/guilt/Project/OPENGL/CreateWindow/src/engine/Shader.cpp
+CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o: CMakeFiles/CreateWindow.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guilt/Project/OPENGL/CreateWindow/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o -MF CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o.d -o CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o -c /home/guilt/Project/OPENGL/CreateWindow/src/engine/Shader.cpp
+
+CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guilt/Project/OPENGL/CreateWindow/src/engine/Shader.cpp > CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.i
+
+CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guilt/Project/OPENGL/CreateWindow/src/engine/Shader.cpp -o CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.s
+
+CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o: CMakeFiles/CreateWindow.dir/flags.make
+CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o: /home/guilt/Project/OPENGL/CreateWindow/src/engine/VBO.cpp
+CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o: CMakeFiles/CreateWindow.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guilt/Project/OPENGL/CreateWindow/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o -MF CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o.d -o CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o -c /home/guilt/Project/OPENGL/CreateWindow/src/engine/VBO.cpp
+
+CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guilt/Project/OPENGL/CreateWindow/src/engine/VBO.cpp > CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.i
+
+CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guilt/Project/OPENGL/CreateWindow/src/engine/VBO.cpp -o CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.s
+
+CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.o: CMakeFiles/CreateWindow.dir/flags.make
+CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.o: /home/guilt/Project/OPENGL/CreateWindow/src/engine/VAO.cpp
+CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.o: CMakeFiles/CreateWindow.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guilt/Project/OPENGL/CreateWindow/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.o -MF CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.o.d -o CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.o -c /home/guilt/Project/OPENGL/CreateWindow/src/engine/VAO.cpp
+
+CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guilt/Project/OPENGL/CreateWindow/src/engine/VAO.cpp > CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.i
+
+CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guilt/Project/OPENGL/CreateWindow/src/engine/VAO.cpp -o CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.s
+
+CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o: CMakeFiles/CreateWindow.dir/flags.make
+CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o: /home/guilt/Project/OPENGL/CreateWindow/src/engine/Camera.cpp
+CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o: CMakeFiles/CreateWindow.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guilt/Project/OPENGL/CreateWindow/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o -MF CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o.d -o CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o -c /home/guilt/Project/OPENGL/CreateWindow/src/engine/Camera.cpp
+
+CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guilt/Project/OPENGL/CreateWindow/src/engine/Camera.cpp > CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.i
+
+CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guilt/Project/OPENGL/CreateWindow/src/engine/Camera.cpp -o CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.s
+
+CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.o: CMakeFiles/CreateWindow.dir/flags.make
+CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.o: /home/guilt/Project/OPENGL/CreateWindow/src/tools/stb_image.cpp
+CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.o: CMakeFiles/CreateWindow.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/guilt/Project/OPENGL/CreateWindow/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.o -MF CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.o.d -o CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.o -c /home/guilt/Project/OPENGL/CreateWindow/src/tools/stb_image.cpp
+
+CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guilt/Project/OPENGL/CreateWindow/src/tools/stb_image.cpp > CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.i
+
+CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guilt/Project/OPENGL/CreateWindow/src/tools/stb_image.cpp -o CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.s
+
 # Object files for target CreateWindow
 CreateWindow_OBJECTS = \
-"CMakeFiles/CreateWindow.dir/src/main.cpp.o"
+"CMakeFiles/CreateWindow.dir/src/main.cpp.o" \
+"CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o" \
+"CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o" \
+"CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.o" \
+"CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o" \
+"CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.o"
 
 # External object files for target CreateWindow
 CreateWindow_EXTERNAL_OBJECTS =
 
 CreateWindow: CMakeFiles/CreateWindow.dir/src/main.cpp.o
+CreateWindow: CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o
+CreateWindow: CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o
+CreateWindow: CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.o
+CreateWindow: CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o
+CreateWindow: CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.o
 CreateWindow: CMakeFiles/CreateWindow.dir/build.make
 CreateWindow: CMakeFiles/CreateWindow.dir/compiler_depend.ts
 CreateWindow: libglad.a
@@ -101,7 +181,7 @@ CreateWindow: /usr/lib64/libglfw.so.3.4
 CreateWindow: /usr/lib64/libGLX.so
 CreateWindow: /usr/lib64/libOpenGL.so
 CreateWindow: CMakeFiles/CreateWindow.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/guilt/Project/OPENGL/CreateWindow/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable CreateWindow"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/guilt/Project/OPENGL/CreateWindow/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable CreateWindow"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CreateWindow.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

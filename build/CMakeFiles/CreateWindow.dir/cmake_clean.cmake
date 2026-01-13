@@ -1,7 +1,17 @@
 file(REMOVE_RECURSE
   "CMakeFiles/CreateWindow.dir/link.d"
+  "CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o"
+  "CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o.d"
+  "CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o"
+  "CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o.d"
+  "CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.o"
+  "CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.o.d"
+  "CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o"
+  "CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o.d"
   "CMakeFiles/CreateWindow.dir/src/main.cpp.o"
   "CMakeFiles/CreateWindow.dir/src/main.cpp.o.d"
+  "CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.o"
+  "CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.o.d"
   "CreateWindow"
   "CreateWindow.pdb"
 )

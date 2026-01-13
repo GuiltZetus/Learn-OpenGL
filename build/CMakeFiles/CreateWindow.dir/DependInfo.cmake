@@ -8,7 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/guilt/Project/OPENGL/CreateWindow/src/engine/Camera.cpp" "CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o" "gcc" "CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o.d"
+  "/home/guilt/Project/OPENGL/CreateWindow/src/engine/Shader.cpp" "CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o" "gcc" "CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o.d"
+  "/home/guilt/Project/OPENGL/CreateWindow/src/engine/VAO.cpp" "CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.o" "gcc" "CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.o.d"
+  "/home/guilt/Project/OPENGL/CreateWindow/src/engine/VBO.cpp" "CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o" "gcc" "CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o.d"
   "/home/guilt/Project/OPENGL/CreateWindow/src/main.cpp" "CMakeFiles/CreateWindow.dir/src/main.cpp.o" "gcc" "CMakeFiles/CreateWindow.dir/src/main.cpp.o.d"
+  "/home/guilt/Project/OPENGL/CreateWindow/src/tools/stb_image.cpp" "CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.o" "gcc" "CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.o.d"
   "" "CreateWindow" "gcc" "CMakeFiles/CreateWindow.dir/link.d"
   )
 

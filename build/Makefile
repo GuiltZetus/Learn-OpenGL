@@ -117,19 +117,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named glad
-
-# Build rule for target.
-glad: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glad
-.PHONY : glad
-
-# fast build rule for target.
-glad/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/build
-.PHONY : glad/fast
-
-#=============================================================================
 # Target rules for targets named CreateWindow
 
 # Build rule for target.
@@ -142,29 +129,138 @@ CreateWindow/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/build
 .PHONY : CreateWindow/fast
 
-src/glad.o: src/glad.c.o
-.PHONY : src/glad.o
+#=============================================================================
+# Target rules for targets named glad
+
+# Build rule for target.
+glad: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glad
+.PHONY : glad
+
+# fast build rule for target.
+glad/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/build
+.PHONY : glad/fast
+
+external/glad/src/glad.o: external/glad/src/glad.c.o
+.PHONY : external/glad/src/glad.o
 
 # target to build an object file
-src/glad.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/src/glad.c.o
-.PHONY : src/glad.c.o
+external/glad/src/glad.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/external/glad/src/glad.c.o
+.PHONY : external/glad/src/glad.c.o
 
-src/glad.i: src/glad.c.i
-.PHONY : src/glad.i
+external/glad/src/glad.i: external/glad/src/glad.c.i
+.PHONY : external/glad/src/glad.i
 
 # target to preprocess a source file
-src/glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/src/glad.c.i
-.PHONY : src/glad.c.i
+external/glad/src/glad.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/external/glad/src/glad.c.i
+.PHONY : external/glad/src/glad.c.i
 
-src/glad.s: src/glad.c.s
-.PHONY : src/glad.s
+external/glad/src/glad.s: external/glad/src/glad.c.s
+.PHONY : external/glad/src/glad.s
 
 # target to generate assembly for a file
-src/glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/src/glad.c.s
-.PHONY : src/glad.c.s
+external/glad/src/glad.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/external/glad/src/glad.c.s
+.PHONY : external/glad/src/glad.c.s
+
+src/engine/Camera.o: src/engine/Camera.cpp.o
+.PHONY : src/engine/Camera.o
+
+# target to build an object file
+src/engine/Camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o
+.PHONY : src/engine/Camera.cpp.o
+
+src/engine/Camera.i: src/engine/Camera.cpp.i
+.PHONY : src/engine/Camera.i
+
+# target to preprocess a source file
+src/engine/Camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.i
+.PHONY : src/engine/Camera.cpp.i
+
+src/engine/Camera.s: src/engine/Camera.cpp.s
+.PHONY : src/engine/Camera.s
+
+# target to generate assembly for a file
+src/engine/Camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.s
+.PHONY : src/engine/Camera.cpp.s
+
+src/engine/Shader.o: src/engine/Shader.cpp.o
+.PHONY : src/engine/Shader.o
+
+# target to build an object file
+src/engine/Shader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o
+.PHONY : src/engine/Shader.cpp.o
+
+src/engine/Shader.i: src/engine/Shader.cpp.i
+.PHONY : src/engine/Shader.i
+
+# target to preprocess a source file
+src/engine/Shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.i
+.PHONY : src/engine/Shader.cpp.i
+
+src/engine/Shader.s: src/engine/Shader.cpp.s
+.PHONY : src/engine/Shader.s
+
+# target to generate assembly for a file
+src/engine/Shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.s
+.PHONY : src/engine/Shader.cpp.s
+
+src/engine/VAO.o: src/engine/VAO.cpp.o
+.PHONY : src/engine/VAO.o
+
+# target to build an object file
+src/engine/VAO.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.o
+.PHONY : src/engine/VAO.cpp.o
+
+src/engine/VAO.i: src/engine/VAO.cpp.i
+.PHONY : src/engine/VAO.i
+
+# target to preprocess a source file
+src/engine/VAO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.i
+.PHONY : src/engine/VAO.cpp.i
+
+src/engine/VAO.s: src/engine/VAO.cpp.s
+.PHONY : src/engine/VAO.s
+
+# target to generate assembly for a file
+src/engine/VAO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.s
+.PHONY : src/engine/VAO.cpp.s
+
+src/engine/VBO.o: src/engine/VBO.cpp.o
+.PHONY : src/engine/VBO.o
+
+# target to build an object file
+src/engine/VBO.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o
+.PHONY : src/engine/VBO.cpp.o
+
+src/engine/VBO.i: src/engine/VBO.cpp.i
+.PHONY : src/engine/VBO.i
+
+# target to preprocess a source file
+src/engine/VBO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.i
+.PHONY : src/engine/VBO.cpp.i
+
+src/engine/VBO.s: src/engine/VBO.cpp.s
+.PHONY : src/engine/VBO.s
+
+# target to generate assembly for a file
+src/engine/VBO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.s
+.PHONY : src/engine/VBO.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -190,6 +286,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/tools/stb_image.o: src/tools/stb_image.cpp.o
+.PHONY : src/tools/stb_image.o
+
+# target to build an object file
+src/tools/stb_image.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.o
+.PHONY : src/tools/stb_image.cpp.o
+
+src/tools/stb_image.i: src/tools/stb_image.cpp.i
+.PHONY : src/tools/stb_image.i
+
+# target to preprocess a source file
+src/tools/stb_image.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.i
+.PHONY : src/tools/stb_image.cpp.i
+
+src/tools/stb_image.s: src/tools/stb_image.cpp.s
+.PHONY : src/tools/stb_image.s
+
+# target to generate assembly for a file
+src/tools/stb_image.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.s
+.PHONY : src/tools/stb_image.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -200,12 +320,27 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... CreateWindow"
 	@echo "... glad"
-	@echo "... src/glad.o"
-	@echo "... src/glad.i"
-	@echo "... src/glad.s"
+	@echo "... external/glad/src/glad.o"
+	@echo "... external/glad/src/glad.i"
+	@echo "... external/glad/src/glad.s"
+	@echo "... src/engine/Camera.o"
+	@echo "... src/engine/Camera.i"
+	@echo "... src/engine/Camera.s"
+	@echo "... src/engine/Shader.o"
+	@echo "... src/engine/Shader.i"
+	@echo "... src/engine/Shader.s"
+	@echo "... src/engine/VAO.o"
+	@echo "... src/engine/VAO.i"
+	@echo "... src/engine/VAO.s"
+	@echo "... src/engine/VBO.o"
+	@echo "... src/engine/VBO.i"
+	@echo "... src/engine/VBO.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/tools/stb_image.o"
+	@echo "... src/tools/stb_image.i"
+	@echo "... src/tools/stb_image.s"
 .PHONY : help
 
 

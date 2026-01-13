@@ -1,14 +1,44 @@
 [
 {
   "directory": "/home/guilt/Project/OPENGL/CreateWindow/build",
-  "command": "/usr/bin/gcc  -I/home/guilt/Project/OPENGL/CreateWindow/include -g -o CMakeFiles/glad.dir/src/glad.c.o -c /home/guilt/Project/OPENGL/CreateWindow/src/glad.c",
-  "file": "/home/guilt/Project/OPENGL/CreateWindow/src/glad.c",
-  "output": "CMakeFiles/glad.dir/src/glad.c.o"
+  "command": "/usr/bin/gcc  -I/home/guilt/Project/OPENGL/CreateWindow/external/glad/include -g -o CMakeFiles/glad.dir/external/glad/src/glad.c.o -c /home/guilt/Project/OPENGL/CreateWindow/external/glad/src/glad.c",
+  "file": "/home/guilt/Project/OPENGL/CreateWindow/external/glad/src/glad.c",
+  "output": "CMakeFiles/glad.dir/external/glad/src/glad.c.o"
 },
 {
   "directory": "/home/guilt/Project/OPENGL/CreateWindow/build",
-  "command": "/usr/bin/g++  -I/home/guilt/Project/OPENGL/CreateWindow/include -g -std=gnu++17 -o CMakeFiles/CreateWindow.dir/src/main.cpp.o -c /home/guilt/Project/OPENGL/CreateWindow/src/main.cpp",
+  "command": "/usr/bin/g++  -I/home/guilt/Project/OPENGL/CreateWindow/include -I/home/guilt/Project/OPENGL/CreateWindow/external/stb -I/home/guilt/Project/OPENGL/CreateWindow/external/glad/include -g -std=gnu++17 -o CMakeFiles/CreateWindow.dir/src/main.cpp.o -c /home/guilt/Project/OPENGL/CreateWindow/src/main.cpp",
   "file": "/home/guilt/Project/OPENGL/CreateWindow/src/main.cpp",
   "output": "CMakeFiles/CreateWindow.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/guilt/Project/OPENGL/CreateWindow/build",
+  "command": "/usr/bin/g++  -I/home/guilt/Project/OPENGL/CreateWindow/include -I/home/guilt/Project/OPENGL/CreateWindow/external/stb -I/home/guilt/Project/OPENGL/CreateWindow/external/glad/include -g -std=gnu++17 -o CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o -c /home/guilt/Project/OPENGL/CreateWindow/src/engine/Shader.cpp",
+  "file": "/home/guilt/Project/OPENGL/CreateWindow/src/engine/Shader.cpp",
+  "output": "CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o"
+},
+{
+  "directory": "/home/guilt/Project/OPENGL/CreateWindow/build",
+  "command": "/usr/bin/g++  -I/home/guilt/Project/OPENGL/CreateWindow/include -I/home/guilt/Project/OPENGL/CreateWindow/external/stb -I/home/guilt/Project/OPENGL/CreateWindow/external/glad/include -g -std=gnu++17 -o CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o -c /home/guilt/Project/OPENGL/CreateWindow/src/engine/VBO.cpp",
+  "file": "/home/guilt/Project/OPENGL/CreateWindow/src/engine/VBO.cpp",
+  "output": "CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o"
+},
+{
+  "directory": "/home/guilt/Project/OPENGL/CreateWindow/build",
+  "command": "/usr/bin/g++  -I/home/guilt/Project/OPENGL/CreateWindow/include -I/home/guilt/Project/OPENGL/CreateWindow/external/stb -I/home/guilt/Project/OPENGL/CreateWindow/external/glad/include -g -std=gnu++17 -o CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.o -c /home/guilt/Project/OPENGL/CreateWindow/src/engine/VAO.cpp",
+  "file": "/home/guilt/Project/OPENGL/CreateWindow/src/engine/VAO.cpp",
+  "output": "CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.o"
+},
+{
+  "directory": "/home/guilt/Project/OPENGL/CreateWindow/build",
+  "command": "/usr/bin/g++  -I/home/guilt/Project/OPENGL/CreateWindow/include -I/home/guilt/Project/OPENGL/CreateWindow/external/stb -I/home/guilt/Project/OPENGL/CreateWindow/external/glad/include -g -std=gnu++17 -o CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o -c /home/guilt/Project/OPENGL/CreateWindow/src/engine/Camera.cpp",
+  "file": "/home/guilt/Project/OPENGL/CreateWindow/src/engine/Camera.cpp",
+  "output": "CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o"
+},
+{
+  "directory": "/home/guilt/Project/OPENGL/CreateWindow/build",
+  "command": "/usr/bin/g++  -I/home/guilt/Project/OPENGL/CreateWindow/include -I/home/guilt/Project/OPENGL/CreateWindow/external/stb -I/home/guilt/Project/OPENGL/CreateWindow/external/glad/include -g -std=gnu++17 -o CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.o -c /home/guilt/Project/OPENGL/CreateWindow/src/tools/stb_image.cpp",
+  "file": "/home/guilt/Project/OPENGL/CreateWindow/src/tools/stb_image.cpp",
+  "output": "CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.o"
 }
 ]
