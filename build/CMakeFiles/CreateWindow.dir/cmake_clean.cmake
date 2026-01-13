@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/CreateWindow.dir/link.d"
+  "CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o"
+  "CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o.d"
   "CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o"
   "CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o.d"
   "CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.o"

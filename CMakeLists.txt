@@ -19,6 +19,7 @@ add_executable(CreateWindow
     src/engine/Shader.cpp
     src/engine/VBO.cpp
     src/engine/VAO.cpp
+    src/engine/Camera.cpp
     src/tools/stb_image.cpp
 )
 

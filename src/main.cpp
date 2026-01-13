@@ -5,6 +5,7 @@
 #include <engine/Shader.h>
 #include <engine/VAO.h>
 #include <engine/VBO.h>
+#include "engine/Camera.h"
 
 // gl math include
 #include <glm/detail/qualifier.hpp>
@@ -26,29 +27,23 @@
 const GLuint SCR_WIDTH = 800;
 const GLuint SCR_HEIGHT = 600;
 
-// camera
-glm::vec3 cameraPos = glm::vec3(0.0f, 0.0f, 3.0f);
-glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
-glm::vec3 cameraUp = glm::vec3(0.0f, 1.0f, 0.0f);
+// default last X,Y coords for camera rotation (camera start at center)
+float lastX = (float)800 / 2;
+float lastY = (float)600 / 2;
 
-// default yaw/pitch angle for looking around with camera
-float yaw = -90.0f;
-float pitch = 0.0f;
+// Camera obj
+Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
 
 // delta time default
 float deltaTime = 0.0f;
 float lastFrame = 0.0f;
-
-// default last X,Y coords for camera rotation (camera start at center)
-float lastX = (float)SCR_WIDTH / 2;
-float lastY = (float)SCR_HEIGHT / 2;
 
 // check for fixing sudden camera jump from cursor entering Window
 bool firstMouse = true;
 
 // callback for changing viewport size after init
 void framebuffer_size_callback(GLFWwindow *window, int width, int height);
-void processInput(GLFWwindow *window, Shader object);
+void processInput(GLFWwindow *window, Shader shader);
 void mouse_callback(GLFWwindow *window, double xposIn, double yposIn);
 
 int main() {
@@ -197,10 +192,6 @@ int main() {
   basicShaderProgram.setInt("texture1", 0);
   basicShaderProgram.setInt("texture2", 1);
 
-  // set world coordiantes for all model
-  glm::mat4 base = glm::mat4(1.0f);
-  // model = glm::rotate(model, glm::radians(-55.0f), glm::vec3(1.0f, 0.0f, 0.0f));
-
   // view camera translate
   glm::mat4 view = glm::mat4(1.0f);
   view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
@@ -234,9 +225,8 @@ int main() {
     float currentFrame = glfwGetTime();
     deltaTime = currentFrame - lastFrame;
     lastFrame = currentFrame;
-
     glm::mat4 view;
-    view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
+    view = glm::lookAt(camera.Pos, camera.Pos + camera.Front, camera.Up);
 
     VAOs[0].bind();
     int modelLoc = glGetUniformLocation(basicShaderProgram.ID, "model");
@@ -282,26 +272,28 @@ void framebuffer_size_callback(GLFWwindow *window, int width, int height) {
 }
 
 // input cotrol for glfw
-void processInput(GLFWwindow *window, Shader object) {
-  float cameraSpeed = 2.5f * deltaTime;
-
+void processInput(GLFWwindow *window, Shader shader) {
   if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
     glfwSetWindowShouldClose(window, true);
   }
   if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS) {
-    object.setFloat("MixRate", 0.1);
+    shader.setFloat("MixRate", 0.1);
   }
   if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS) {
-    object.setFloat("MixRate", 0.4);
+    shader.setFloat("MixRate", 0.4);
   }
-  if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
-    cameraPos += cameraSpeed * cameraFront;
-  if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
-    cameraPos -= cameraSpeed * cameraFront;
-  if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
-    cameraPos -= glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
-  if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
-    cameraPos += glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+  if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) {
+    camera.handleKeyboardInput(FORWARD, deltaTime);
+  }
+  if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
+    camera.handleKeyboardInput(BACKWARD, deltaTime);
+  }
+  if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) {
+    camera.handleKeyboardInput(LEFT, deltaTime);
+  }
+  if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) {
+    camera.handleKeyboardInput(RIGHT, deltaTime);
+  }
 }
 
 void mouse_callback(GLFWwindow *window, double xposIn, double yposIn) {
@@ -316,24 +308,5 @@ void mouse_callback(GLFWwindow *window, double xposIn, double yposIn) {
 
   lastX = xposIn;
   lastY = yposIn;
-
-  const float mouse_sensitivity = 0.1f;
-  xoffset *= mouse_sensitivity;
-  yoffset *= mouse_sensitivity;
-
-  yaw += xoffset;
-  pitch += yoffset;
-
-  if (pitch > 89.0f)
-    pitch = 89.0f;
-  if (pitch < -89.0f)
-    pitch = -89.0f;
-
-  // look around matrix
-  glm::vec3 lookDirection;
-  lookDirection.x = cos(glm::radians(yaw)) * cos(glm::radians(pitch));
-  lookDirection.y = sin(glm::radians(pitch));
-  lookDirection.z = sin(glm::radians(yaw)) * cos(glm::radians(pitch));
-
-  cameraFront = glm::normalize(lookDirection);
+  camera.handleMouseInput(xoffset, yoffset);
 }

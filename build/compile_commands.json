@@ -31,6 +31,12 @@
 },
 {
   "directory": "/home/guilt/Project/OPENGL/CreateWindow/build",
+  "command": "/usr/bin/g++  -I/home/guilt/Project/OPENGL/CreateWindow/include -I/home/guilt/Project/OPENGL/CreateWindow/external/stb -I/home/guilt/Project/OPENGL/CreateWindow/external/glad/include -g -std=gnu++17 -o CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o -c /home/guilt/Project/OPENGL/CreateWindow/src/engine/Camera.cpp",
+  "file": "/home/guilt/Project/OPENGL/CreateWindow/src/engine/Camera.cpp",
+  "output": "CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o"
+},
+{
+  "directory": "/home/guilt/Project/OPENGL/CreateWindow/build",
   "command": "/usr/bin/g++  -I/home/guilt/Project/OPENGL/CreateWindow/include -I/home/guilt/Project/OPENGL/CreateWindow/external/stb -I/home/guilt/Project/OPENGL/CreateWindow/external/glad/include -g -std=gnu++17 -o CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.o -c /home/guilt/Project/OPENGL/CreateWindow/src/tools/stb_image.cpp",
   "file": "/home/guilt/Project/OPENGL/CreateWindow/src/tools/stb_image.cpp",
   "output": "CMakeFiles/CreateWindow.dir/src/tools/stb_image.cpp.o"

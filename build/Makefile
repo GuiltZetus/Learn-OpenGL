@@ -166,6 +166,30 @@ external/glad/src/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/external/glad/src/glad.c.s
 .PHONY : external/glad/src/glad.c.s
 
+src/engine/Camera.o: src/engine/Camera.cpp.o
+.PHONY : src/engine/Camera.o
+
+# target to build an object file
+src/engine/Camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o
+.PHONY : src/engine/Camera.cpp.o
+
+src/engine/Camera.i: src/engine/Camera.cpp.i
+.PHONY : src/engine/Camera.i
+
+# target to preprocess a source file
+src/engine/Camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.i
+.PHONY : src/engine/Camera.cpp.i
+
+src/engine/Camera.s: src/engine/Camera.cpp.s
+.PHONY : src/engine/Camera.s
+
+# target to generate assembly for a file
+src/engine/Camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CreateWindow.dir/build.make CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.s
+.PHONY : src/engine/Camera.cpp.s
+
 src/engine/Shader.o: src/engine/Shader.cpp.o
 .PHONY : src/engine/Shader.o
 
@@ -299,6 +323,9 @@ help:
 	@echo "... external/glad/src/glad.o"
 	@echo "... external/glad/src/glad.i"
 	@echo "... external/glad/src/glad.s"
+	@echo "... src/engine/Camera.o"
+	@echo "... src/engine/Camera.i"
+	@echo "... src/engine/Camera.s"
 	@echo "... src/engine/Shader.o"
 	@echo "... src/engine/Shader.i"
 	@echo "... src/engine/Shader.s"
