@@ -192,10 +192,6 @@ int main() {
   basicShaderProgram.setInt("texture1", 0);
   basicShaderProgram.setInt("texture2", 1);
 
-  // view camera translate
-  glm::mat4 view = glm::mat4(1.0f);
-  view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
-
   // perspectiv projection
   glm::mat4 projection;
   projection =
@@ -208,6 +204,7 @@ int main() {
   while (!glfwWindowShouldClose(window)) {
     // input
     processInput(window, basicShaderProgram);
+    std::cout << camera.Pos.z << std::endl;
 
     // rendering command
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);

@@ -1,6 +1,9 @@
 #include <engine/Camera.h>
 
-Camera::Camera(glm::vec3 initialPositionVector) { Pos = initialPositionVector; };
+Camera::Camera(glm::vec3 initialPositionVector) {
+  Pos = initialPositionVector;
+  updateCameraVectors();
+};
 
 void Camera::handleKeyboardInput(camera_movement direction, float deltaTime) {
   float velocity = Speed * deltaTime;
