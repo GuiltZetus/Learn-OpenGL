@@ -1,24 +1,13 @@
 #include <engine/VBO.h>
 
-#include <iostream>
+BufferObject::BufferObject() { glGenBuffers(1, &ID); }
 
-VBO::VBO()
-{
-    glGenBuffers(1, &ID);
+void BufferObject::bind() { glBindBuffer(target(), ID); }
+
+void BufferObject::setData(GLsizeiptr size, const void *data, GLenum usage) {
+  bind();
+  glBufferData(target(), size, data, usage);
 }
 
-VBO::~VBO()
-{
-    glDeleteBuffers(1, &ID);
-}
-
-void VBO::bind()
-{
-    glBindBuffer(GL_ARRAY_BUFFER, ID);
-}
-
-void VBO::setData(GLsizeiptr size, const void *data, GLenum usage)
-{
-    bind();
-    glBufferData(GL_ARRAY_BUFFER, size, data, usage);
-}
+GLenum VBO::target() const { return GL_ARRAY_BUFFER; };
+GLenum EBO::target() const { return GL_ARRAY_BUFFER; };
