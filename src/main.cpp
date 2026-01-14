@@ -169,7 +169,7 @@ int main() {
     float time = glfwGetTime();
     lightPosition.x = cos(time) * 2.0f;
     lightPosition.y = 1.0f;
-    lightPosition.x = sin(time) * 2.0f;
+    lightPosition.z = sin(time) * 2.0f;
 
     basicShaderProgram.setVec3("viewPos", camera.Position);
     basicShaderProgram.setVec3("lightPos", lightPosition);
