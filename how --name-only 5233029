@@ -1,0 +1,149 @@
+[33mcommit 91ab4b5467a492308fe50d12a3816afdf44168cd[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mphong-lighting-viewspace[m[33m)[m
+Author: guilt <davikzetus@gmail.com>
+Date:   Wed Jan 14 13:37:16 2026 +0700
+
+    Add gitignore and remove build/clangd artifacts
+
+[33mcommit 5233029d51c965358ac154ca68c00b9efd3febc0[m[33m ([m[1;31morigin/lighting[m[33m, [m[1;32mlighting[m[33m)[m
+Author: guilt <davikzetus@gmail.com>
+Date:   Wed Jan 14 11:00:46 2026 +0700
+
+    add orbitting light source, diffusal light and specular light
+
+[33mcommit aab4db12cb7db20f7930e5551119f9520cc344b5[m
+Author: guilt <davikzetus@gmail.com>
+Date:   Wed Jan 14 00:12:12 2026 +0700
+
+    init commit
+
+[33mcommit ea91a799bb6adc09ee630bbe8e37ece244c77c7a[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m, [m[1;32mlightning[m[33m)[m
+Merge: b20cef0 bfe4d46
+Author: Guilt Zetus <126429666+GuiltZetus@users.noreply.github.com>
+Date:   Tue Jan 13 20:01:18 2026 +0700
+
+    Merge pull request #2 from GuiltZetus/camera
+    
+    Camera
+
+[33mcommit bfe4d468f8b253ac5a5980c3fe1caf37b77cbe4c[m[33m ([m[1;31morigin/camera[m[33m)[m
+Author: guilt <davikzetus@gmail.com>
+Date:   Tue Jan 13 19:56:05 2026 +0700
+
+    refactor code to make sure view fructum are correct during initial boot without mouse movement
+
+[33mcommit 7f4a8324df60cc05a4d8c0a447b57c270c9b32fd[m
+Author: guilt <davikzetus@gmail.com>
+Date:   Tue Jan 13 10:40:29 2026 +0700
+
+    added camera support
+
+[33mcommit f3dc9f6ac457940a6d9054266b70591e7173da78[m
+Author: guilt <davikzetus@gmail.com>
+Date:   Tue Jan 13 05:13:11 2026 +0700
+
+    add simple fly camera
+
+[33mcommit 520a2f268a03351a0d335d8dfa2ae8c0b5269bb7[m[33m ([m[1;31morigin/coordinates[m[33m, [m[1;32mcoordinates[m[33m)[m
+Author: guilt <davikzetus@gmail.com>
+Date:   Tue Jan 13 00:04:26 2026 +0700
+
+    3d cube rotating
+
+[33mcommit ee70d6eaaa1e8ebe89832460c406feed984d4ea7[m[33m ([m[1;31morigin/tranformation[m[33m, [m[1;32mtranformation[m[33m)[m
+Author: guilt <davikzetus@gmail.com>
+Date:   Mon Jan 12 05:43:33 2026 +0700
+
+    add translation matrix and translate calc for vertex shader
+
+[33mcommit d8975f289faf3556f2847e7a46c09cf1df4a2b5b[m[33m ([m[1;31morigin/texture[m[33m, [m[1;32mtexture[m[33m)[m
+Author: guilt <davikzetus@gmail.com>
+Date:   Sun Jan 11 06:51:10 2026 +0700
+
+    add some basic button to change opacity for the texture mix rate
+
+[33mcommit 1e1588bd7e3da314e4bf0607c45344343db7748f[m
+Author: guilt <davikzetus@gmail.com>
+Date:   Sun Jan 11 00:49:06 2026 +0700
+
+    add basic texture sampling no OOP structure
+
+[33mcommit 5efd05d95b9bbb7fc83f28ce6868d83a4c415471[m[33m ([m[1;31morigin/shader-program-changing-color[m[33m, [m[1;32mshader-program-changing-color[m[33m)[m
+Author: guilt <davikzetus@gmail.com>
+Date:   Fri Jan 9 21:47:12 2026 +0700
+
+    add some more OOP architecture
+
+[33mcommit 1eba549154d24b71afb9cae0a1f40f73fcb71c43[m
+Author: guilt <davikzetus@gmail.com>
+Date:   Wed Jan 7 01:42:10 2026 +0700
+
+    move VAO to OOP structure
+
+[33mcommit 9c30a883fb1281a4eceec0bf0f0d920597a0a946[m
+Author: guilt <davikzetus@gmail.com>
+Date:   Wed Jan 7 01:14:05 2026 +0700
+
+    transition VBO to OOP structure
+
+[33mcommit 60c5e5e51fa592f7363b2e601392be0d4879b0b8[m
+Author: guilt <davikzetus@gmail.com>
+Date:   Mon Dec 22 12:12:19 2025 +0700
+
+    separation and OOP/C++ compliance design for the shaders
+
+[33mcommit 6f0b5e3c3c68078cea8e441845b538978bcc6383[m[33m ([m[1;31morigin/yellow-fragment-shader-excercise[m[33m, [m[1;32myellow-fragment-shader-excercise[m[33m)[m
+Author: guilt <davikzetus@gmail.com>
+Date:   Mon Dec 22 00:49:38 2025 +0700
+
+    succesful implementation of yellow shader
+
+[33mcommit a526e56c2f2351fef140107e6352582fe9f7e0ea[m
+Author: guilt <davikzetus@gmail.com>
+Date:   Sun Dec 21 00:58:56 2025 +0700
+
+    implementation success, the triangle position are aa bit off but its ok
+
+[33mcommit b20cef06edd08e49b12975252ffde25c887024c3[m
+Merge: 894815c 029edb8
+Author: Guilt Zetus <126429666+GuiltZetus@users.noreply.github.com>
+Date:   Sun Dec 21 00:29:59 2025 +0700
+
+    Merge pull request #1 from GuiltZetus/2-triangle-side-to-side
+    
+    2 triangle side to side
+
+[33mcommit 029edb8faa2fda55a484fa06af8ed2c012b36a4e[m[33m ([m[1;31morigin/2-triangle-side-to-side[m[33m, [m[1;32m2-triangle-side-to-side[m[33m)[m
+Author: guilt <davikzetus@gmail.com>
+Date:   Sun Dec 21 00:16:37 2025 +0700
+
+    add 2 vbo, vao and wireframe toggle
+
+[33mcommit c6420c14c7c186df0778b74c4d8ef6e49fe84227[m[33m ([m[1;32mdraw-rectangle[m[33m, [m[1;32mB[m[33m)[m
+Author: guilt <davikzetus@gmail.com>
+Date:   Sat Dec 20 22:42:08 2025 +0700
+
+    draw rectangle with EBO element array buffer
+
+[33mcommit e6e12b9cf1842f688c1f3d93ee6b8ef57acd00f7[m[33m ([m[1;32mhello-triangle[m[33m)[m
+Author: guilt <davikzetus@gmail.com>
+Date:   Sat Dec 20 22:26:15 2025 +0700
+
+    draw triangle with VBO and VAO
+
+[33mcommit 219b9131d91f2eeedec1e679ef2cda0c9c804ee6[m
+Author: guilt <davikzetus@gmail.com>
+Date:   Fri Dec 19 23:58:21 2025 +0700
+
+    rendering first triangle with glDrawArrays
+
+[33mcommit e6be5832fa053170ecc02b807e7c0ca1b7a6949b[m
+Author: guilt <davikzetus@gmail.com>
+Date:   Fri Dec 19 23:57:35 2025 +0700
+
+    creating the first triangle with glDrawArrays
+
+[33mcommit 894815c64bdf7f8b01960122b86a9e04e20dd846[m
+Author: guilt <davikzetus@gmail.com>
+Date:   Fri Dec 19 15:20:16 2025 +0700
+
+    init commit
