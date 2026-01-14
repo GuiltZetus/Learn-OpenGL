@@ -1,20 +1,21 @@
 #include <engine/Camera.h>
+#include <glm/gtc/matrix_transform.hpp>
 
 Camera::Camera(glm::vec3 initialPositionVector) {
-  Pos = initialPositionVector;
+  Position = initialPositionVector;
   updateCameraVectors();
 };
 
 void Camera::handleKeyboardInput(camera_movement direction, float deltaTime) {
   float velocity = Speed * deltaTime;
   if (direction == FORWARD)
-    Pos += velocity * Front;
+    Position += velocity * Front;
   if (direction == BACKWARD)
-    Pos -= velocity * Front;
+    Position -= velocity * Front;
   if (direction == LEFT)
-    Pos -= Right * velocity;
+    Position -= Right * velocity;
   if (direction == RIGHT)
-    Pos += Right * velocity;
+    Position += Right * velocity;
 }
 
 void Camera::handleMouseInput(float xoffset, float yoffset) {
@@ -32,6 +33,8 @@ void Camera::handleMouseInput(float xoffset, float yoffset) {
 
   updateCameraVectors();
 }
+
+glm::mat4 Camera::getViewMatrix() { return glm::lookAt(Position, Position + Front, Up); }
 
 void Camera::updateCameraVectors() {
   // look around matrix
