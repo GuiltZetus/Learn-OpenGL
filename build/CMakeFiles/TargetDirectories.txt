@@ -1,4 +1,0 @@
-/home/guilt/Project/OPENGL/CreateWindow/build/CMakeFiles/CreateWindow.dir
-/home/guilt/Project/OPENGL/CreateWindow/build/CMakeFiles/glad.dir
-/home/guilt/Project/OPENGL/CreateWindow/build/CMakeFiles/edit_cache.dir
-/home/guilt/Project/OPENGL/CreateWindow/build/CMakeFiles/rebuild_cache.dir

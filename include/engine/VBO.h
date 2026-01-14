@@ -2,21 +2,29 @@
 #define VBO_CLASS_H
 
 #include <glad.h>
-#include <string>
-#include <iostream>
 
-class VBO
-{
-
+class BufferObject {
 public:
-    VBO();
-    ~VBO();
+  BufferObject();
+  virtual ~BufferObject() = default;
 
-    void bind();
-    void setData(GLsizeiptr size, const void *data, GLenum usage);
+  void bind();
+  void setData(GLsizeiptr size, const void *data, GLenum usage);
+
+  virtual GLenum target() const = 0;
 
 private:
-    GLuint ID;
+  unsigned int ID;
+};
+
+class VBO final : public BufferObject {
+public:
+  GLenum target() const;
+};
+
+class EBO final : public BufferObject {
+public:
+  GLenum target() const;
 };
 
 #endif

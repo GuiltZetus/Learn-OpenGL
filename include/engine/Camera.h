@@ -14,7 +14,7 @@ public:
   float Pitch = 0.0f;
 
   // camera
-  glm::vec3 Pos;
+  glm::vec3 Position;
   glm::vec3 Front = glm::vec3(0.0f, 0.0f, -1.0f);
   glm::vec3 Up;
   glm::vec3 Right = glm::normalize(glm::cross(Front, Up));
@@ -24,9 +24,9 @@ public:
 
   Camera(glm::vec3 initialPositionVector);
 
-  glm::vec4 getMatrix();
   void handleKeyboardInput(camera_movement direction, float deltaTime);
   void handleMouseInput(float xoffset, float yoffset);
+  glm::mat4 getViewMatrix();
 
 private:
   void updateCameraVectors();
