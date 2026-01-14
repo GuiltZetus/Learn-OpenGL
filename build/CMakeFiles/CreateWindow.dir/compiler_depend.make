@@ -156,6 +156,8 @@ CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o: /home/guilt/Project/OPENGL/
   /usr/include/glm/detail/type_vec4.hpp \
   /usr/include/glm/detail/type_vec4.inl \
   /usr/include/glm/exponential.hpp \
+  /usr/include/glm/ext/matrix_clip_space.hpp \
+  /usr/include/glm/ext/matrix_clip_space.inl \
   /usr/include/glm/ext/matrix_double2x2.hpp \
   /usr/include/glm/ext/matrix_double2x2_precision.hpp \
   /usr/include/glm/ext/matrix_double2x3.hpp \
@@ -192,6 +194,12 @@ CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o: /home/guilt/Project/OPENGL/
   /usr/include/glm/ext/matrix_float4x3_precision.hpp \
   /usr/include/glm/ext/matrix_float4x4.hpp \
   /usr/include/glm/ext/matrix_float4x4_precision.hpp \
+  /usr/include/glm/ext/matrix_projection.hpp \
+  /usr/include/glm/ext/matrix_projection.inl \
+  /usr/include/glm/ext/matrix_transform.hpp \
+  /usr/include/glm/ext/matrix_transform.inl \
+  /usr/include/glm/ext/scalar_constants.hpp \
+  /usr/include/glm/ext/scalar_constants.inl \
   /usr/include/glm/ext/scalar_int_sized.hpp \
   /usr/include/glm/ext/scalar_uint_sized.hpp \
   /usr/include/glm/ext/vector_bool2.hpp \
@@ -227,6 +235,10 @@ CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o: /home/guilt/Project/OPENGL/
   /usr/include/glm/fwd.hpp \
   /usr/include/glm/geometric.hpp \
   /usr/include/glm/glm.hpp \
+  /usr/include/glm/gtc/constants.hpp \
+  /usr/include/glm/gtc/constants.inl \
+  /usr/include/glm/gtc/matrix_transform.hpp \
+  /usr/include/glm/gtc/matrix_transform.inl \
   /usr/include/glm/integer.hpp \
   /usr/include/glm/mat2x2.hpp \
   /usr/include/glm/mat2x3.hpp \
@@ -1421,10 +1433,6 @@ CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.o:
 
 /usr/include/glm/gtc/epsilon.inl:
 
-/usr/include/glm/gtc/constants.inl:
-
-/usr/include/glm/gtc/constants.hpp:
-
 /usr/include/glm/ext/vector_uint1.hpp:
 
 /usr/include/glm/ext/vector_relational.inl:
@@ -1438,8 +1446,6 @@ CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.o:
 /lib64/libmvec.so.1:
 
 /usr/include/glm/ext/vector_bool1.hpp:
-
-/usr/include/glm/ext/scalar_constants.hpp:
 
 /usr/include/glm/ext/quaternion_trigonometric.inl:
 
@@ -1456,16 +1462,6 @@ CMakeFiles/CreateWindow.dir/src/engine/VAO.cpp.o:
 /usr/include/glm/ext/quaternion_double_precision.hpp:
 
 /usr/include/glm/ext/quaternion_double.hpp:
-
-/usr/include/glm/ext/matrix_transform.hpp:
-
-/usr/lib64/libGLdispatch.so.0:
-
-/usr/include/glm/ext/matrix_projection.inl:
-
-/usr/include/glm/ext/matrix_projection.hpp:
-
-/usr/include/glm/ext/matrix_clip_space.hpp:
 
 /usr/include/glm/detail/type_quat.hpp:
 
@@ -1508,12 +1504,6 @@ CMakeFiles/CreateWindow.dir/src/main.cpp.o:
 /usr/include/c++/15/ext/atomicity.h:
 
 /usr/include/c++/15/exception:
-
-libglad.a:
-
-/usr/include/glm/ext/scalar_constants.inl:
-
-/usr/include/c++/15/cwctype:
 
 /usr/include/c++/15/cwchar:
 
@@ -1643,19 +1633,35 @@ libglad.a:
 
 /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h:
 
+/lib64/libm.so.6:
+
+/usr/include/c++/15/bits/hash_bytes.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/15/include/limits.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/15/include/float.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/limits.h:
+
+/usr/include/gnu/stubs.h:
+
 /usr/include/glm/detail/func_vector_relational.inl:
 
 /usr/include/glm/ext/matrix_float4x4_precision.hpp:
 
-/usr/lib/gcc/x86_64-redhat-linux/15/include/xmmintrin.h:
-
-/usr/include/glm/ext/matrix_clip_space.inl:
-
-/usr/include/glm/detail/setup.hpp:
-
 /usr/include/c++/15/bits/basic_ios.tcc:
 
 /usr/include/glm/vec2.hpp:
+
+/usr/include/stdlib.h:
+
+/usr/include/glm/detail/func_integer.inl:
 
 /usr/include/c++/15/initializer_list:
 
@@ -1697,8 +1703,6 @@ libglad.a:
 
 /usr/include/c++/15/tr1/modified_bessel_func.tcc:
 
-/usr/include/linux/limits.h:
-
 /usr/include/c++/15/tr1/legendre_function.tcc:
 
 /usr/include/strings.h:
@@ -1716,12 +1720,6 @@ libglad.a:
 /usr/include/glm/ext/vector_double3.hpp:
 
 /usr/include/glm/detail/func_geometric.inl:
-
-/lib64/libm.so.6:
-
-/usr/include/c++/15/bits/hash_bytes.h:
-
-/usr/lib/gcc/x86_64-redhat-linux/15/include/limits.h:
 
 /usr/include/c++/15/limits:
 
@@ -1750,8 +1748,6 @@ libglad.a:
 /usr/include/glm/detail/_vectorize.hpp:
 
 /usr/include/c++/15/bits/stl_pair.h:
-
-/usr/include/limits.h:
 
 /home/guilt/Project/OPENGL/CreateWindow/src/engine/VBO.cpp:
 
@@ -1785,6 +1781,8 @@ libglad.a:
 
 /usr/include/c++/15/cstddef:
 
+/usr/include/glm/ext/matrix_transform.hpp:
+
 /usr/include/glm/ext/vector_float1.hpp:
 
 /usr/include/bits/wctype-wchar.h:
@@ -1805,9 +1803,11 @@ libglad.a:
 
 /usr/include/bits/xopen_lim.h:
 
-/usr/include/bits/pthreadtypes-arch.h:
+/usr/include/math.h:
 
-/usr/include/gnu/stubs.h:
+/usr/include/glm/common.hpp:
+
+/usr/include/bits/pthreadtypes-arch.h:
 
 /usr/lib64/crti.o:
 
@@ -1840,8 +1840,6 @@ CMakeFiles/CreateWindow.dir/src/engine/Shader.cpp.o:
 /usr/include/glm/vec3.hpp:
 
 /usr/include/c++/15/tr1/riemann_zeta.tcc:
-
-/usr/include/sys/types.h:
 
 /usr/include/asm/errno.h:
 
@@ -1938,6 +1936,8 @@ CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o:
 /usr/include/bits/waitflags.h:
 
 /usr/include/glm/detail/type_mat3x2.inl:
+
+/usr/include/glm/ext/matrix_projection.hpp:
 
 /usr/include/c++/15/bits/locale_facets.h:
 
@@ -2045,15 +2045,13 @@ CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o:
 
 /usr/include/bits/types/time_t.h:
 
-/usr/include/glm/ext/matrix_transform.inl:
-
-/usr/include/glm/ext/matrix_float3x3.hpp:
-
 /usr/include/bits/typesizes.h:
 
 /usr/include/c++/15/debug/debug.h:
 
 /usr/include/glm/ext/matrix_double3x4_precision.hpp:
+
+/usr/include/glm/ext/scalar_constants.hpp:
 
 /home/guilt/Project/OPENGL/CreateWindow/include/engine/Shader.h:
 
@@ -2073,9 +2071,9 @@ CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o:
 
 /usr/include/glm/mat2x2.hpp:
 
-/usr/include/glm/gtc/matrix_transform.inl:
-
 /usr/include/glm/detail/qualifier.hpp:
+
+/usr/include/glm/gtc/matrix_transform.inl:
 
 /usr/include/glm/detail/type_mat2x3.hpp:
 
@@ -2131,6 +2129,12 @@ CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o:
 
 /usr/include/glm/detail/type_mat4x3.inl:
 
+/usr/lib/gcc/x86_64-redhat-linux/15/include/xmmintrin.h:
+
+/usr/include/glm/detail/setup.hpp:
+
+/usr/include/glm/ext/matrix_clip_space.inl:
+
 /usr/lib/gcc/x86_64-redhat-linux/15/include/mm_malloc.h:
 
 /usr/include/glm/detail/type_mat4x4.inl:
@@ -2161,6 +2165,8 @@ CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o:
 
 /usr/include/glm/detail/type_vec1.inl:
 
+/usr/include/glm/ext/matrix_clip_space.hpp:
+
 /usr/include/glm/detail/type_mat2x3.inl:
 
 /usr/include/glm/detail/type_vec2.hpp:
@@ -2188,10 +2194,6 @@ CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o:
 /usr/include/glm/detail/type_vec4.hpp:
 
 /usr/include/glm/exponential.hpp:
-
-/usr/include/glm/gtc/matrix_transform.hpp:
-
-/usr/include/glm/simd/platform.h:
 
 /home/guilt/Project/OPENGL/CreateWindow/external/glad/include/glad.h:
 
@@ -2227,6 +2229,12 @@ CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o:
 
 /usr/include/glm/ext/matrix_float2x2.hpp:
 
+/usr/include/glm/gtc/epsilon.hpp:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/glm/ext/matrix_float2x2_precision.hpp:
+
 /usr/include/glm/ext/matrix_float2x3.hpp:
 
 /usr/include/bits/posix2_lim.h:
@@ -2236,8 +2244,6 @@ CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o:
 /usr/include/glm/ext/matrix_float2x4.hpp:
 
 /usr/include/glm/ext/vector_float3.hpp:
-
-/usr/include/sys/select.h:
 
 /usr/include/glm/ext/matrix_float3x2_precision.hpp:
 
@@ -2261,17 +2267,25 @@ CMakeFiles/CreateWindow.dir/src/engine/Camera.cpp.o:
 
 /usr/include/glm/ext/matrix_float4x4.hpp:
 
+/usr/lib64/libGLdispatch.so.0:
+
+/usr/include/glm/ext/matrix_projection.inl:
+
+/usr/include/glm/ext/matrix_float3x3.hpp:
+
+/usr/include/glm/ext/matrix_transform.inl:
+
+libglad.a:
+
+/usr/include/c++/15/cwctype:
+
+/usr/include/glm/ext/scalar_constants.inl:
+
 /usr/include/glm/ext/scalar_uint_sized.hpp:
 
 /usr/include/glm/ext/vector_uint1_sized.hpp:
 
 /usr/include/glm/ext/vector_float2.hpp:
-
-/usr/include/glm/gtc/epsilon.hpp:
-
-/usr/include/glm/ext/matrix_float2x2_precision.hpp:
-
-/usr/include/stdc-predef.h:
 
 CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o:
 
@@ -2307,6 +2321,8 @@ CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o:
 
 /usr/include/glm/ext/vector_int2.hpp:
 
+/usr/include/glm/gtc/constants.hpp:
+
 /usr/include/c++/15/ext/alloc_traits.h:
 
 /usr/include/glm/ext/vector_uint2.hpp:
@@ -2317,9 +2333,11 @@ CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o:
 
 /usr/include/glm/glm.hpp:
 
-/usr/include/glm/detail/func_integer.inl:
+/usr/include/glm/gtc/constants.inl:
 
-/usr/include/stdlib.h:
+/usr/include/glm/simd/platform.h:
+
+/usr/include/glm/gtc/matrix_transform.hpp:
 
 /usr/include/glm/integer.hpp:
 
@@ -2332,12 +2350,6 @@ CMakeFiles/CreateWindow.dir/src/engine/VBO.cpp.o:
 /usr/include/c++/15/bits/char_traits.h:
 
 /usr/include/glm/mat4x4.hpp:
-
-/usr/include/glm/common.hpp:
-
-/usr/include/math.h:
-
-/usr/lib/gcc/x86_64-redhat-linux/15/include/float.h:
 
 /usr/include/c++/15/string:
 
