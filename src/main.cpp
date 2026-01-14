@@ -172,7 +172,7 @@ int main() {
     lightPosition.z = sin(time) * 2.0f;
 
     basicShaderProgram.setVec3("viewPos", camera.Position);
-    basicShaderProgram.setVec3("lightPos", lightPosition);
+    basicShaderProgram.setVec3("lightPosition", lightPosition);
 
     cubeVAO.bind();
     glDrawArrays(GL_TRIANGLES, 0, 36);
